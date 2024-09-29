@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-[url(./assets/finalBg.jpg)];
+  }
+
+  .overflow-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
