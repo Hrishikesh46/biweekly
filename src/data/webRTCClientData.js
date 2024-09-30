@@ -19,6 +19,7 @@ export const WebClientData = [
         prevScore: '83',
         currScore: '200',
         courses: ['Start the UX Design Process'],
+        rank: 1,
         CurrSeverity: [2, 13, 11, 7, 0],
       },
       {
@@ -29,6 +30,7 @@ export const WebClientData = [
         prevScore: '140',
         currScore: '138',
         courses: ['Crash course on Python'],
+        rank: 2,
         CurrSeverity: [1, 2, 10, 20, 2],
       },
       {
@@ -39,6 +41,7 @@ export const WebClientData = [
         prevScore: '53',
         currScore: '82',
         courses: ['Java Spring Boot'],
+        rank: 3,
         CurrSeverity: [1, 3, 5, 7, 2],
       },
       {
@@ -49,6 +52,7 @@ export const WebClientData = [
         prevScore: '35',
         currScore: '60',
         courses: ['Web development'],
+        rank: 4,
         CurrSeverity: [0, 4, 4, 2, 2],
       },
       {
@@ -59,6 +63,7 @@ export const WebClientData = [
         prevScore: 'NA',
         currScore: '21',
         courses: ['DevOps with AWS', 'Learning REST APIs'],
+        rank: 5,
         CurrSeverity: [0, 0, 3, 2, 0],
       },
     ],

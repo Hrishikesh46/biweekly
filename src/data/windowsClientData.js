@@ -6,7 +6,6 @@ import sonali from '../assets/TeamMembers/Sonali.Anand.jpg';
 import pratiksha from '../assets/TeamMembers/Pratiksha.Bhavsar.jpg';
 import khushi from '../assets/TeamMembers/Khushi.Bohre.jpg';
 
-
 export const WindowsClientData = [
   {
     client: 'Windows',
@@ -20,6 +19,7 @@ export const WindowsClientData = [
         prevScore: '75',
         currScore: '144',
         courses: ['Figma UI Design'],
+        rank: 1,
         CurrSeverity: [0, 5, 7, 8, 1],
       },
 
@@ -31,6 +31,7 @@ export const WindowsClientData = [
         prevScore: '193',
         currScore: '129',
         courses: ['JavaScript Basics'],
+        rank: 2,
         CurrSeverity: [2, 1, 10, 18, 0],
       },
       {
@@ -40,7 +41,11 @@ export const WindowsClientData = [
         profileImg: aditi,
         prevScore: '49',
         currScore: '100',
-        courses: ['Introduction to Machine Learning','Natural Language Processing & Transformers'],
+        courses: [
+          'Introduction to Machine Learning',
+          'Natural Language Processing & Transformers',
+        ],
+        rank: 3,
         CurrSeverity: [0, 5, 7, 8, 1],
       },
       {
@@ -51,6 +56,7 @@ export const WindowsClientData = [
         prevScore: '42',
         currScore: '83',
         courses: [' Introduction to React'],
+        rank: 4,
         CurrSeverity: [0, 6, 4, 5, 0],
       },
       {
@@ -61,9 +67,10 @@ export const WindowsClientData = [
         prevScore: 'NA',
         currScore: '14',
         courses: ['Generative AI '],
+        rank: 5,
         CurrSeverity: [0, 1, 0, 2, 0],
       },
     ],
-    currConsolidatedCount: [2, 21, 31,42, 1],
+    currConsolidatedCount: [2, 21, 31, 42, 1],
   },
 ];

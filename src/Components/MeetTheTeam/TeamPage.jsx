@@ -182,25 +182,89 @@ const TeamPage = ({ category, setCategory }) => {
                       <img
                         src={member.profileImg}
                         alt=''
-                        className='w-32 h-32 p-1 mx-auto mt-4 object-contain border-[3px] border-white rounded-full '
+                        className={`w-32 h-32 p-1 mx-auto mt-4 object-contain border-[3px] ${
+                          member.rank === 1
+                            ? 'border-[#C29101]'
+                            : 'border-white'
+                        } ${
+                          member.rank === 2
+                            ? 'border-[#EAECEC]'
+                            : 'border-white'
+                        } ${
+                          member.rank === 3
+                            ? 'border-[#B87333]'
+                            : 'border-white'
+                        }  rounded-full `}
                       />
 
                       {/* name */}
-                      <div className='text-center text-2xl p-2 text-white'>
+                      <div
+                        className={`text-center text-2xl p-2 font-semibold ${
+                          member.rank === 1 ? 'text-[#C29101]' : 'text-white'
+                        } ${
+                          member.rank === 2 ? 'text-[#EAECEC]' : 'text-white'
+                        } ${
+                          member.rank === 3 ? 'text-[#B87333]' : 'text-white'
+                        }  `}
+                      >
                         {member.name}
                       </div>
 
                       {/* score */}
                       <div className='mx-auto flex gap-10 text-xl pb-4'>
-                        <div className='pt-1'>
+                        <div
+                          className={`pt-1 font-semibold ${
+                            member.rank === 1 ? 'text-[#C29101]' : 'text-white'
+                          } ${
+                            member.rank === 2 ? 'text-[#EAECEC]' : 'text-white'
+                          } ${
+                            member.rank === 3 ? 'text-[#B87333]' : 'text-white'
+                          } `}
+                        >
                           Prev Score{' '}
-                          <div className='text-center text-white'>
+                          <div
+                            className={`text-center font-semibold ${
+                              member.rank === 1
+                                ? 'text-[#C29101]'
+                                : 'text-white'
+                            } ${
+                              member.rank === 2
+                                ? 'text-[#EAECEC]'
+                                : 'text-white'
+                            } ${
+                              member.rank === 3
+                                ? 'text-[#B87333]'
+                                : 'text-white'
+                            }  `}
+                          >
                             {member.prevScore}
                           </div>
                         </div>
-                        <div className='pt-1'>
+                        <div
+                          className={`pt-1 font-semibold ${
+                            member.rank === 1 ? 'text-[#C29101]' : 'text-white'
+                          } ${
+                            member.rank === 2 ? 'text-[#EAECEC]' : 'text-white'
+                          } ${
+                            member.rank === 3 ? 'text-[#B87333]' : 'text-white'
+                          } `}
+                        >
                           Curr score{' '}
-                          <div className='text-center text-white'>
+                          <div
+                            className={`text-center font-semibold ${
+                              member.rank === 1
+                                ? 'text-[#C29101]'
+                                : 'text-white'
+                            } ${
+                              member.rank === 2
+                                ? 'text-[#EAECEC]'
+                                : 'text-white'
+                            } ${
+                              member.rank === 3
+                                ? 'text-[#B87333]'
+                                : 'text-white'
+                            } `}
+                          >
                             {member.currScore}
                           </div>
                         </div>

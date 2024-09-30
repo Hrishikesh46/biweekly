@@ -19,8 +19,8 @@ export const IOSClientData = [
         prevScore: '193',
         currScore: '240',
         courses: ['Introduction to React'],
+        rank: 1,
         CurrSeverity: [4, 11, 21, 5, 0],
-      
       },
       {
         name: 'Dhruv Parmar',
@@ -30,6 +30,7 @@ export const IOSClientData = [
         prevScore: '99',
         currScore: '148',
         courses: ['Data Structures & Algorithms', 'Introduction to Serverless'],
+        rank: 2,
         CurrSeverity: [2, 9, 11, 0, 1],
       },
       {
@@ -40,6 +41,7 @@ export const IOSClientData = [
         prevScore: '83',
         currScore: '142',
         courses: ['Typescript for Beginners', 'Data Structures & Algorithm'],
+        rank: 3,
         CurrSeverity: [2, 6, 10, 8, 0],
       },
       {
@@ -50,6 +52,7 @@ export const IOSClientData = [
         prevScore: '73',
         currScore: '118',
         courses: ['Programming with Java'],
+        rank: 4,
         CurrSeverity: [0, 2, 18, 4, 0],
       },
       {
@@ -60,6 +63,7 @@ export const IOSClientData = [
         prevScore: '54',
         currScore: '83',
         courses: ['Figma UI Design'],
+        rank: 5,
         CurrSeverity: [1, 1, 7, 10, 0],
       },
       {
@@ -70,10 +74,11 @@ export const IOSClientData = [
         prevScore: 'NA',
         currScore: '40',
         courses: ['Advanced Java ', 'Introduction to SQL'],
+        rank: 6,
         CurrSeverity: [0, 1, 1, 9, 0],
       },
     ],
-    
+
     currConsolidatedCount: [9, 30, 68, 36, 1],
   },
 ];

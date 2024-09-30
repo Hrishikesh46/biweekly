@@ -20,7 +20,7 @@ export const AndroidClientData = [
         prevScore: '204',
         currScore: '172',
         courses: ['Introduction to React'],
-        
+        rank: 1,
         CurrSeverity: [1, 6, 14, 13, 4],
       },
 
@@ -32,7 +32,7 @@ export const AndroidClientData = [
         prevScore: '68',
         currScore: '155',
         courses: ['Programming with JavaScript'],
-       
+        rank: 2,
         CurrSeverity: [2, 7, 12, 6, 1],
       },
       {
@@ -46,7 +46,7 @@ export const AndroidClientData = [
           'Introduction to Cloud computing',
           'Database Management with SQL',
         ],
-       
+        rank: 3,
         CurrSeverity: [1, 5, 11, 9, 0],
       },
       {
@@ -58,6 +58,7 @@ export const AndroidClientData = [
         currScore: '121',
         courses: ['Programming with JavaScript'],
         CurrSeverity: [0, 4, 15, 5, 2],
+        rank: 4,
       },
       {
         name: 'Riya Kesaria',
@@ -67,6 +68,7 @@ export const AndroidClientData = [
         prevScore: '11',
         currScore: '83',
         courses: ['Data Structures and Algorithms', 'Linux Cloud and DevOps'],
+        rank: 5,
         CurrSeverity: [1, 2, 9, 4, 0],
       },
       {
@@ -81,6 +83,7 @@ export const AndroidClientData = [
           'DevOPS with AWS',
           'Introduction to Backend Development',
         ],
+        rank: 6,
         CurrSeverity: [0, 3, 5, 7, 0],
       },
 
@@ -92,10 +95,12 @@ export const AndroidClientData = [
         prevScore: 'NA',
         currScore: '45',
         courses: ['Product Management: Initial Product Strategy and Plan'],
+        rank: 7,
+
         CurrSeverity: [0, 2, 5, 3, 0],
       },
     ],
-    
+
     currConsolidatedCount: [5, 29, 71, 47, 7],
   },
 ];
