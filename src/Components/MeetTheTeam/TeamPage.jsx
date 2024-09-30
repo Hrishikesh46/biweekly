@@ -111,10 +111,7 @@ const TeamPage = ({ category, setCategory }) => {
                 <div className=''>JioMeet</div>
                 <div className=''>{category[0]?.client}</div>
               </div>
-              <motion.div
-                
-                className='w-[350px]   h-[350px]  rounded-lg  '
-              >
+              <motion.div className='w-[350px]   h-[350px]  rounded-lg  '>
                 <Doughnut
                   options={options}
                   data={{
@@ -141,7 +138,8 @@ const TeamPage = ({ category, setCategory }) => {
 
               {/* backbutton */}
               <motion.div
-              whileHover={{scale:1.05}} transition={{duration:0.3}}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
                 className='absolute top-6 left-2 border p-2 rounded-xl '
                 onClick={() => setCategory('')}
               >
@@ -170,6 +168,7 @@ const TeamPage = ({ category, setCategory }) => {
               {category[0].clientMembers.map((member) => {
                 return (
                   <motion.div
+                    key={member.name}
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.4 }}
                     className='h-[260px] w-[270px] bg-gray-500 bg-opacity-50 rounded-lg'

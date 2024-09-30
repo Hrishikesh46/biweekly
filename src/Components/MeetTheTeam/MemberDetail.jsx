@@ -1,7 +1,6 @@
 import React from 'react';
-import userProfile from '../../assets/myImage.png';
-import { IoMdArrowRoundBack } from 'react-icons/io';
-import { RxCross2 } from "react-icons/rx";
+
+import { RxCross2 } from 'react-icons/rx';
 import LazyLoad from 'react-lazyload';
 import { motion } from 'framer-motion';
 import { Bar } from 'react-chartjs-2';
@@ -63,24 +62,20 @@ const MemberDetail = ({ user, setUser }) => {
     <motion.div
       initial={{ y: 180, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      
       className=' w-[1000px] mx-auto h-screen  overflow-hidden flex flex-col justify-center items-center  '
     >
-     
       {/* profile and name */}
       <motion.div className='flex flex-col gap-4 rounded-3xl bg-[#2a2626] pt-8  h-[600px] '>
-         {/* backbutton */}
-         <motion.div
-            animate={{scale:1.05}} transition={{du}}
-            className='absolute h-[60px] w-[60px] self-end mr-4 mt-[-4px] hover:scale-125 duration-200 flex justify-center items-center rounded-xl '
-            onClick={() => setUser('')}
-          >
-            <RxCross2  className='w-8 h-8'/>
-          </motion.div>
+        {/* backbutton */}
+        <motion.div
+          className='absolute h-[60px] w-[60px] self-end mr-4 mt-[-4px] hover:scale-125 duration-200 flex justify-center items-center rounded-xl '
+          onClick={() => setUser('')}
+        >
+          <RxCross2 className='w-8 h-8' />
+        </motion.div>
         <div className=' flex w-[800px] h-[272px]  justify-evenly items-center '>
-            
           {/* profile */}
-          <LazyLoad>  
+          <LazyLoad>
             <img
               src={user.profileImg}
               alt=''
@@ -122,17 +117,13 @@ const MemberDetail = ({ user, setUser }) => {
           </div>
 
           {/* Graph */}
-          <motion.div
-           
-            className='w-[400px] h-[400px]  rounded-lg pt-1 '
-          >
+          <motion.div className='w-[400px] h-[400px]  rounded-lg pt-1 '>
             <Bar
               options={optionsBar}
               data={{
                 labels: ['Blocker', 'Critical', 'Major', 'Normal', 'Minor'],
 
                 datasets: [
-                  
                   {
                     label: 'Curr Severity Count',
                     data: user.CurrSeverity,
