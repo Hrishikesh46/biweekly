@@ -17,8 +17,7 @@ export const MacOSClientData = [
         prevScore: '81',
         currScore: '138',
         courses: ['Figma UI Design'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [1, 7, 10, 9, 0],
       },
       {
         name: 'Nikita Bharati',
@@ -28,8 +27,7 @@ export const MacOSClientData = [
         prevScore: '140',
         currScore: '94',
         courses: ['React - The Complete Guide 2024 ', 'Next.js & Redux'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [1, 3, 7, 8, 1],
       },
       {
         name: 'Mansa Sharma',
@@ -39,8 +37,7 @@ export const MacOSClientData = [
         prevScore: '68',
         currScore: '93',
         courses: ['Introduction to SQL'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [1, 2, 9, 9, 0],
       },
       {
         name: 'Isha Wargad',
@@ -50,11 +47,10 @@ export const MacOSClientData = [
         prevScore: '24',
         currScore: '52',
         courses: ['Figma UI Design'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 2, 4, 5, 1],
       },
     ],
 
-    currConsolidatedCount: [2, 19, 41, 33, 2],
+    currConsolidatedCount: [3, 14, 30, 31,2],
   },
 ];

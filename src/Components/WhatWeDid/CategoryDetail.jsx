@@ -15,7 +15,7 @@ const CategoryDetail = () => {
   const [category, setCategory] = useState('');
   console.log(category);
   return (
-    <div className='w-full mx-auto h-full'>
+    <div className='w-full mx-auto my-16 h-full'>
       {/* Heading */}
       {/* Category section */}
       <AnimatePresence mode='wait'>
@@ -25,7 +25,7 @@ const CategoryDetail = () => {
               initial={{ y: -80, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.4 }}
-              className='text-6xl text-center text-white mb-10  '
+              className='text-6xl text-center text-white mb-16  '
             >
               Tasks Performed
             </motion.div>
@@ -47,7 +47,7 @@ const CategoryDetail = () => {
                 <motion.img
                   src={jiomeetImg}
                   alt=''
-                  className='w-full h-[500px]  rounded-2xl'
+                  className='w-full h-[560px]  rounded-2xl'
                 />
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -68,7 +68,7 @@ const CategoryDetail = () => {
                 <img
                   src={namoImg}
                   alt=''
-                  className=' h-[500px] w-full rounded-2xl'
+                  className=' h-[560px] w-full rounded-2xl'
                 />
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -89,7 +89,7 @@ const CategoryDetail = () => {
                 <img
                   src={peopleFirstImg}
                   alt=''
-                  className=' h-[500px] w-full rounded-2xl'
+                  className=' h-[560px] w-full rounded-2xl'
                 />
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -110,7 +110,7 @@ const CategoryDetail = () => {
                 <img
                   src={teamphoto}
                   alt=''
-                  className='object-cover h-[500px] w-full rounded-2xl'
+                  className='object-cover h-[560px] w-full rounded-2xl'
                 />
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}

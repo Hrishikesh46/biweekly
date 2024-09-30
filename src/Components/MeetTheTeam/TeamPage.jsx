@@ -112,8 +112,7 @@ const TeamPage = ({ category, setCategory }) => {
                 <div className=''>{category[0]?.client}</div>
               </div>
               <motion.div
-                whileHover={{ scale: 1.2 }}
-                transition={{ duration: 0.4 }}
+                
                 className='w-[350px]   h-[350px]  rounded-lg  '
               >
                 <Doughnut
@@ -141,12 +140,13 @@ const TeamPage = ({ category, setCategory }) => {
               </motion.div>
 
               {/* backbutton */}
-              <div
-                className='absolute top-6 left-0 border p-2 rounded-xl '
+              <motion.div
+              whileHover={{scale:1.05}} transition={{duration:0.3}}
+                className='absolute top-6 left-2 border p-2 rounded-xl '
                 onClick={() => setCategory('')}
               >
                 <IoMdArrowRoundBack className='w-8 h-8' />
-              </div>
+              </motion.div>
             </div>
 
             {/* Team Member Data */}

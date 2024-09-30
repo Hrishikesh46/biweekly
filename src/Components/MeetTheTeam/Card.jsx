@@ -12,7 +12,7 @@ const Card = () => {
   const [category, setCategory] = useState('');
 
   return (
-    <motion.div className='h-screen mt-12 relative'>
+    <motion.div className='h-screen  relative flex flex-col gap-8 justify-center '>
       {/* Heading */}
 
       {!category && (
@@ -20,7 +20,7 @@ const Card = () => {
           initial={{ y: -80, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.4 }}
-          className='text-center text-7xl text-white'
+          className='text-center text-7xl text-white '
         >
           Meet The Team
         </motion.div>
@@ -32,13 +32,13 @@ const Card = () => {
           initial={{ y: -150, opacity: 0 }}
           transition={{ duration: 0.5 }}
           animate={{ y: 0, opacity: 1 }}
-          className='mt-8 h-[500px] flex flex-wrap justify-center  gap-8  pl-12 pr-12 pb-12'
+          className='my-8 h-[500px] flex flex-wrap justify-center  gap-8   pr-8 '
         >
           {/* Individual clients*/}
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className='h-[230px] w-[230px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
+            className='h-[260px] w-[260px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
             onClick={() => setCategory(AndroidClientData)}
           >
             {/* client logo */}
@@ -55,7 +55,7 @@ const Card = () => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className='h-[230px] w-[230px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
+            className='h-[260px] w-[260px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
             onClick={() => setCategory(IOSClientData)}
           >
             {/* client logo */}
@@ -72,7 +72,7 @@ const Card = () => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className='h-[230px] w-[230px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
+            className='h-[260px] w-[260px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
             onClick={() => setCategory(WindowsClientData)}
           >
             {/* client logo */}
@@ -89,7 +89,7 @@ const Card = () => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className='h-[230px] w-[230px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
+            className='h-[260px] w-[260px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
             onClick={() => setCategory(MacOSClientData)}
           >
             {/* client logo */}
@@ -106,7 +106,7 @@ const Card = () => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className='h-[230px] w-[230px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
+            className='h-[260px] w-[260px] border border-white cursor-pointer text-black p-4 bg-white flex flex-col gap-4 items-center justify-center font-bold rounded-2xl'
             onClick={() => setCategory(WebClientData)}
           >
             {/* client logo */}

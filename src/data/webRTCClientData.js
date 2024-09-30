@@ -19,8 +19,7 @@ export const WebClientData = [
         prevScore: '83',
         currScore: '200',
         courses: ['Start the UX Design Process'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [2, 13, 11, 7, 0],
       },
       {
         name: ' Soumya Sinha',
@@ -30,8 +29,7 @@ export const WebClientData = [
         prevScore: '140',
         currScore: '138',
         courses: ['Crash course on Python'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [1, 2, 10, 20, 2],
       },
       {
         name: 'Alwis Shaji',
@@ -41,8 +39,7 @@ export const WebClientData = [
         prevScore: '53',
         currScore: '82',
         courses: ['Java Spring Boot'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [1, 3, 5, 7, 2],
       },
       {
         name: 'Ayush Pandey',
@@ -52,8 +49,7 @@ export const WebClientData = [
         prevScore: '35',
         currScore: '60',
         courses: ['Web development'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 4, 4, 2, 2],
       },
       {
         name: 'Aniruddh Ghewade',
@@ -63,11 +59,9 @@ export const WebClientData = [
         prevScore: 'NA',
         currScore: '21',
         courses: ['DevOps with AWS', 'Learning REST APIs'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 0, 3, 2, 0],
       },
     ],
-    prevConsolidatedCount: [23, 65, 33, 21, 64],
-    currConsolidatedCount: [44, 34, 23, 53, 12],
+    currConsolidatedCount: [4, 22, 33, 38, 6],
   },
 ];

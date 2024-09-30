@@ -19,8 +19,8 @@ export const IOSClientData = [
         prevScore: '193',
         currScore: '240',
         courses: ['Introduction to React'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [4, 11, 21, 5, 0],
+      
       },
       {
         name: 'Dhruv Parmar',
@@ -30,8 +30,7 @@ export const IOSClientData = [
         prevScore: '99',
         currScore: '148',
         courses: ['Data Structures & Algorithms', 'Introduction to Serverless'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [2, 9, 11, 0, 1],
       },
       {
         name: 'Hrishikesh Yadav',
@@ -41,8 +40,7 @@ export const IOSClientData = [
         prevScore: '83',
         currScore: '142',
         courses: ['Typescript for Beginners', 'Data Structures & Algorithm'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [2, 6, 10, 8, 0],
       },
       {
         name: 'Pranjal Thigale',
@@ -52,8 +50,7 @@ export const IOSClientData = [
         prevScore: '73',
         currScore: '118',
         courses: ['Programming with Java'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 2, 18, 4, 0],
       },
       {
         name: 'Barnali1 C',
@@ -63,8 +60,7 @@ export const IOSClientData = [
         prevScore: '54',
         currScore: '83',
         courses: ['Figma UI Design'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [1, 1, 7, 10, 0],
       },
       {
         name: 'Shreya Srivastava',
@@ -74,11 +70,10 @@ export const IOSClientData = [
         prevScore: 'NA',
         currScore: '40',
         courses: ['Advanced Java ', 'Introduction to SQL'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 1, 1, 9, 0],
       },
     ],
-    prevConsolidatedCount: [23, 65, 33, 21, 64],
-    currConsolidatedCount: [44, 34, 23, 53, 12],
+    
+    currConsolidatedCount: [9, 30, 68, 36, 1],
   },
 ];

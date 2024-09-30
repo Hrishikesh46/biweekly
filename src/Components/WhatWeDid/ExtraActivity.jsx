@@ -86,7 +86,7 @@ const ExtraActivity = ({ setCategory }) => {
       </div>
 
       {/* Onam */}
-      <div className='w-[1200px] h-screen mx-auto flex  gap-12 text-white mt-10 mb-6'>
+      <div className='w-[1200px] h-auto mx-auto flex  gap-12 text-white mt-10 mb-6'>
         {/* title and description */}
         <div className='flex flex-col gap-6  items-center w-1/2 text-6xl pt-10'>
           <div className=''>Onam Celebration</div>

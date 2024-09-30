@@ -71,14 +71,14 @@ const JioMeetPage = ({ setCategory }) => {
     >
       {/* Back button */}
       <div
-        className='absolute top-4 left-4  text-white hover:scale-105 duration-300 border border-white p-2 rounded-xl '
+        className='absolute top-4 left-2  text-white hover:scale-105 duration-300 border border-white p-2 rounded-xl '
         onClick={() => setCategory('')}
       >
         <IoMdArrowRoundBack />
       </div>
 
       {/* title and graph */}
-      <div className='w-full h-auto flex justify-center items-center gap-28  '>
+      <div className='w-auto h-auto flex justify-center items-center gap-28  '>
         {/* title */}
 
         <div className='flex flex-col text-white  gap-3 w-1/3 '>
@@ -106,8 +106,7 @@ const JioMeetPage = ({ setCategory }) => {
 
         {/* graph */}
         <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
+          
           className='w-[500px] h-[300px] pt-12  p-1  rounded-lg '
         >
           <Bar
@@ -117,7 +116,7 @@ const JioMeetPage = ({ setCategory }) => {
               datasets: [
                 {
                   label: false,
-                  data: [10, 25, 30, 25, 15],
+                  data: [2,3, 5, 18, 2],
                   backgroundColor: [
                     'rgba(255, 99, 132, 0.8)',
                     'rgba(255, 159, 64, 0.8)',
@@ -159,40 +158,34 @@ const JioMeetPage = ({ setCategory }) => {
         <div className='flex flex-col gap-3 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
           <div className='text-2xl font-bold'>
-            Backward Compatibility Testing
+          Post-deployment testing (PDT)
           </div>
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-            Key testing strategies include Backward Compatibility Testing (BCT)
-            checks if the current production version remains compatible with
-            planned server changes before release.
+          PDT verifies major functionalities immediately after software deployment to ensure everything works correctly in production.
           </div>
         </div>
         <div className='flex flex-col gap-3 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
           <div className='text-2xl font-bold'>
-            Backward Compatibility Testing
+          Post Deployment Sanity
           </div>
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-            Key testing strategies include Backward Compatibility Testing (BCT)
-            checks if the current production version remains compatible with
-            planned server changes before release.
+           PDS checks new features in production, ensuring functionality works correctly and doesn’t disrupt existing features. Bugs are raised if issues arise.
           </div>
         </div>
-        <div className='flex flex-col gap-3 bg-white h-auto  p-4 rounded-xl'>
+        <div className='flex flex-col gap-8 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
           <div className='text-2xl font-bold'>
-            Backward Compatibility Testing
+            Load Testing
           </div>
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-            Key testing strategies include Backward Compatibility Testing (BCT)
-            checks if the current production version remains compatible with
-            planned server changes before release.
+          To evaluates how JioMeet behaves under a specific, expected load. The main goal is to check if system can handle the anticipated amount of work and find potential points of failure 
           </div>
         </div>
       </div>

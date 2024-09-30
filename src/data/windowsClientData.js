@@ -4,6 +4,8 @@ import ishita from '../assets/TeamMembers/Ishita1.singh.jpeg';
 import aditi from '../assets/TeamMembers/Aditi_Bukkawar.png';
 import sonali from '../assets/TeamMembers/Sonali.Anand.jpg';
 import pratiksha from '../assets/TeamMembers/Pratiksha.Bhavsar.jpg';
+import khushi from '../assets/TeamMembers/Khushi.Bohre.jpg';
+
 
 export const WindowsClientData = [
   {
@@ -12,14 +14,13 @@ export const WindowsClientData = [
     clientMembers: [
       {
         name: 'Ishita Singh',
-        nickname: 'Tuntun Mausi ',
+        nickname: 'Bouncer ',
         client: 'Windows',
         profileImg: ishita,
         prevScore: '75',
         currScore: '144',
         courses: ['Figma UI Design'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 5, 7, 8, 1],
       },
 
       {
@@ -30,8 +31,7 @@ export const WindowsClientData = [
         prevScore: '193',
         currScore: '129',
         courses: ['JavaScript Basics'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [2, 1, 10, 18, 0],
       },
       {
         name: 'Aditi Bukkawar',
@@ -40,9 +40,8 @@ export const WindowsClientData = [
         profileImg: aditi,
         prevScore: '49',
         currScore: '100',
-        courses: [''],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        courses: ['Introduction to Machine Learning','Natural Language Processing & Transformers'],
+        CurrSeverity: [0, 5, 7, 8, 1],
       },
       {
         name: 'Pratiksha Bhavsar',
@@ -52,11 +51,19 @@ export const WindowsClientData = [
         prevScore: '42',
         currScore: '83',
         courses: [' Introduction to React'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 6, 4, 5, 0],
+      },
+      {
+        name: 'khushi Bohre',
+        nickname: 'Khushi ',
+        client: 'Windows',
+        profileImg: khushi,
+        prevScore: 'NA',
+        currScore: '14',
+        courses: ['Generative AI '],
+        CurrSeverity: [0, 1, 0, 2, 0],
       },
     ],
-    prevConsolidatedCount: [23, 65, 33, 21, 64],
-    currConsolidatedCount: [44, 34, 23, 53, 12],
+    currConsolidatedCount: [2, 21, 31,42, 1],
   },
 ];

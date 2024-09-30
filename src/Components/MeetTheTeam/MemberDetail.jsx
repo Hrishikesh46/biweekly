@@ -1,6 +1,7 @@
 import React from 'react';
 import userProfile from '../../assets/myImage.png';
 import { IoMdArrowRoundBack } from 'react-icons/io';
+import { RxCross2 } from "react-icons/rx";
 import LazyLoad from 'react-lazyload';
 import { motion } from 'framer-motion';
 import { Bar } from 'react-chartjs-2';
@@ -28,6 +29,7 @@ const optionsBar = {
   responsive: true,
   plugins: {
     legend: {
+      display: false,
       labels: {
         color: 'White', // Change the font color of the legend labels
         font: {
@@ -61,24 +63,24 @@ const MemberDetail = ({ user, setUser }) => {
     <motion.div
       initial={{ y: 180, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      className=' w-[1000px] mx-auto h-screen   overflow-hidden flex flex-col justify-center items-center  '
+      
+      className=' w-[1000px] mx-auto h-screen  overflow-hidden flex flex-col justify-center items-center  '
     >
-      {/* backbutton */}
-      <motion.div
-        initial={{ x: 40, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className='absolute top-6 left-0 border p-2 rounded-xl '
-        onClick={() => setUser('')}
-      >
-        <IoMdArrowRoundBack className='w-8 h-8' />
-      </motion.div>
+     
       {/* profile and name */}
-      <motion.div className='flex flex-col gap-4 border pt-8 border-white h-[600px] '>
+      <motion.div className='flex flex-col gap-4 rounded-3xl bg-[#2a2626] pt-8  h-[600px] '>
+         {/* backbutton */}
+         <motion.div
+            animate={{scale:1.05}} transition={{du}}
+            className='absolute h-[60px] w-[60px] self-end mr-4 mt-[-4px] hover:scale-125 duration-200 flex justify-center items-center rounded-xl '
+            onClick={() => setUser('')}
+          >
+            <RxCross2  className='w-8 h-8'/>
+          </motion.div>
         <div className=' flex w-[800px] h-[272px]  justify-evenly items-center '>
+            
           {/* profile */}
-          <LazyLoad>
+          <LazyLoad>  
             <img
               src={user.profileImg}
               alt=''
@@ -121,9 +123,8 @@ const MemberDetail = ({ user, setUser }) => {
 
           {/* Graph */}
           <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.4 }}
-            className='w-[400px] h-[400px]  rounded-lg pt-5 '
+           
+            className='w-[400px] h-[400px]  rounded-lg pt-1 '
           >
             <Bar
               options={optionsBar}
@@ -131,19 +132,7 @@ const MemberDetail = ({ user, setUser }) => {
                 labels: ['Blocker', 'Critical', 'Major', 'Normal', 'Minor'],
 
                 datasets: [
-                  {
-                    label: 'Prev Severity Count',
-                    data: user.prevSeverity,
-                    backgroundColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(255, 159, 64, 1)',
-                      'rgba(255, 205, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(54, 162, 235, 1)',
-                    ],
-                    borderRadius: 5,
-                    borderColor: 'none',
-                  },
+                  
                   {
                     label: 'Curr Severity Count',
                     data: user.CurrSeverity,

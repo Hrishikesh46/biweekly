@@ -20,8 +20,8 @@ export const AndroidClientData = [
         prevScore: '204',
         currScore: '172',
         courses: ['Introduction to React'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        
+        CurrSeverity: [1, 6, 14, 13, 4],
       },
 
       {
@@ -32,8 +32,8 @@ export const AndroidClientData = [
         prevScore: '68',
         currScore: '155',
         courses: ['Programming with JavaScript'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+       
+        CurrSeverity: [2, 7, 12, 6, 1],
       },
       {
         name: 'Sanika Mhasvekar',
@@ -46,8 +46,8 @@ export const AndroidClientData = [
           'Introduction to Cloud computing',
           'Database Management with SQL',
         ],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+       
+        CurrSeverity: [1, 5, 11, 9, 0],
       },
       {
         name: 'Sahara Mali',
@@ -57,8 +57,7 @@ export const AndroidClientData = [
         prevScore: '53',
         currScore: '121',
         courses: ['Programming with JavaScript'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 4, 15, 5, 2],
       },
       {
         name: 'Riya Kesaria',
@@ -68,8 +67,7 @@ export const AndroidClientData = [
         prevScore: '11',
         currScore: '83',
         courses: ['Data Structures and Algorithms', 'Linux Cloud and DevOps'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [1, 2, 9, 4, 0],
       },
       {
         name: 'Divyanshi S',
@@ -83,8 +81,7 @@ export const AndroidClientData = [
           'DevOPS with AWS',
           'Introduction to Backend Development',
         ],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 3, 5, 7, 0],
       },
 
       {
@@ -95,11 +92,10 @@ export const AndroidClientData = [
         prevScore: 'NA',
         currScore: '45',
         courses: ['Product Management: Initial Product Strategy and Plan'],
-        prevSeverity: [10, 20, 43, 26, 15],
-        CurrSeverity: [10, 20, 43, 26, 15],
+        CurrSeverity: [0, 2, 5, 3, 0],
       },
     ],
-    prevConsolidatedCount: [23, 65, 33, 21, 64],
-    currConsolidatedCount: [44, 34, 23, 53, 12],
+    
+    currConsolidatedCount: [5, 29, 71, 47, 7],
   },
 ];

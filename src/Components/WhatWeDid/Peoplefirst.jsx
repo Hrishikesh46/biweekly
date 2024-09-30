@@ -30,6 +30,7 @@ const options = {
   responsive: true,
   plugins: {
     legend: {
+      display: false,
       labels: {
         color: 'White', // Change the font color of the legend labels
         font: {
@@ -77,7 +78,7 @@ const Peoplefirst = ({ setCategory }) => {
       </div>
 
       {/* title and graph */}
-      <div className='w-full h-auto flex justify-center items-center gap-28 pt-6 '>
+      <div className='w-full h-auto flex justify-center items-center gap-28 pt-16 '>
         {/* title */}
 
         <div className='flex flex-col text-white  gap-3 w-1/3 '>
@@ -96,17 +97,14 @@ const Peoplefirst = ({ setCategory }) => {
           </div> */}
 
           {/* description */}
-          <p className=' text-xl pt-4'>
-            JioMeet integrates HD video conferencing, content sharing, and chat
-            collaboration, allowing users to schedule calls or host meetings
-            from any device.
+          <p className=' text-xl pt-3'>
+           It is an internal portal designed specifically for Reliance users, providing a comprehensive platform to manage HR-related activities such as attendance, payroll, leaves, and other employee self-service functions.
           </p>
         </div>
 
         {/* graph */}
         <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
+          
           className='w-[500px] h-[250px]  rounded-lg mt-4'
         >
           <Bar
@@ -116,7 +114,7 @@ const Peoplefirst = ({ setCategory }) => {
               datasets: [
                 {
                   label: 'Current Severity Count',
-                  data: [30, 30, 25, 35, 10],
+                  data: [4, 56, 117, 95, 12],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 159, 64, 1)',
@@ -142,30 +140,27 @@ const Peoplefirst = ({ setCategory }) => {
       </div>
 
       <div className=' w-[1200px] flex justify-center items-center mx-auto gap-8 '>
-        <div className='flex flex-col w-[400px] gap-3 bg-white h-auto  p-4 rounded-xl'>
+        <div className='flex flex-col w-[400px] h-[200px] gap-3 bg-white   p-4 rounded-xl'>
           {/* title */}
           <div className='text-2xl font-bold'>
-            Backward Compatibility Testing
+            Sanity & Retesting
           </div>
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-            Key testing strategies include Backward Compatibility Testing (BCT)
-            checks if the current production version remains compatible with
-            planned server changes before release.
+          We conducted User Acceptance Testing to ensure the app's functionality aligns with user requirements and expectations. Additionally, we retested raised issues to confirm that features were stable after minor changes or bug fixes.
           </div>
         </div>
-        <div className='flex flex-col w-[400px] gap-3 bg-white h-auto  p-4 rounded-xl'>
+        <div className='flex flex-col w-[400px] h-[200px] gap-3 bg-white   p-4 rounded-xl'>
           {/* title */}
           <div className='text-2xl font-bold'>
-            Backward Compatibility Testing
+            Travel & Guest House
           </div>
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-            Key testing strategies include Backward Compatibility Testing (BCT)
-            checks if the current production version remains compatible with
-            planned server changes before release.
+          As part of the testing process, we also evaluated a new feature called "Travel and Guest House," aimed at simplifying the process for booking travel and accommodation for employees.
+ 
           </div>
         </div>
 

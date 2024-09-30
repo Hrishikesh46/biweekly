@@ -83,6 +83,7 @@ const optionsBar = {
   responsive: true,
   plugins: {
     legend: {
+      display: false,
       labels: {
         color: 'White', // Change the font color of the legend labels
         font: {
@@ -131,8 +132,7 @@ const Namo = ({ setCategory }) => {
       <div className=' flex justify-evenly items-center  text-white pt-16 '>
         {/* Pie chart */}
         <motion.div
-          whileHover={{ scale: 1.2 }}
-          transition={{ duration: 0.4 }}
+          
           className='w-[300px]   h-[300px]  rounded-lg  '
         >
           <Doughnut
@@ -143,7 +143,7 @@ const Namo = ({ setCategory }) => {
               datasets: [
                 {
                   label: 'Current Severity Count',
-                  data: [20, 43, 59, 23, 34],
+                  data: [21, 82, 166, 120, 6],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 159, 64, 1)',
@@ -220,8 +220,7 @@ const Namo = ({ setCategory }) => {
         </div>
         {/* chart */}
         <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.4 }}
+        
           className='w-[600px] h-[300px]  rounded-lg pt-10 '
         >
           <Bar
@@ -231,7 +230,7 @@ const Namo = ({ setCategory }) => {
 
               datasets: [
                 {
-                  label: 'Current Severity Count',
+                  
                   data: [20, 43, 59, 23, 34],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
@@ -253,8 +252,7 @@ const Namo = ({ setCategory }) => {
       <div className='flex justify-between items-center  text-white gap-12  w-[1000px] mx-auto mt-8'>
         {/* chart */}
         <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.4 }}
+          
           className='w-[600px] h-[300px]  rounded-lg pt-10 '
         >
           <Bar
@@ -328,13 +326,11 @@ const Namo = ({ setCategory }) => {
             />
             <div className='flex flex-col gap-2  '>
               {/* title */}
-              <div className=''>Jan Dhan Yojana</div>
+              <div className=''>Founder's Day Quiz</div>
 
               {/* description */}
               <div className='text-sm '>
-                known as the "Jan Dhan 10/10 Challenge," invites participants to
-                answer 10 simple questions about the scheme. It is based on the
-                flagship initiative launched by the government in 2014
+              This module was created to honour Pandit DeanDayal Upadhyaya the forerunner of Bharatiya Janata Party on the occasion of his Birthday. 
               </div>
             </div>
           </div>
@@ -346,16 +342,16 @@ const Namo = ({ setCategory }) => {
             >
               <div className=''>Accomplishments</div>
               <div className='text-sm '>
-                We raised over 140 issues in this module to make sure that there
-                is not BCM issues before going liv on production.
+              We raised over 300 issues in this module to make sure that there
+                is not BCM issues before going live on production.
+
               </div>
             </div>
           </div>
         </div>
         {/* chart */}
         <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.4 }}
+          
           className='w-[600px] h-[300px]  rounded-lg pt-10 '
         >
           <Bar
