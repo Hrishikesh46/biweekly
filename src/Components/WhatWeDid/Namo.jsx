@@ -154,6 +154,8 @@ const Namo = ({ setCategory }) => {
               ],
             }}
           />
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 381</div>
+
         </motion.div>
 
         {/* logo, title and description */}
@@ -216,7 +218,7 @@ const Namo = ({ setCategory }) => {
           </div>
         </div>
         {/* chart */}
-        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-10 '>
+        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-5 '>
           <Bar
             options={optionsBar}
             data={{
@@ -224,7 +226,7 @@ const Namo = ({ setCategory }) => {
 
               datasets: [
                 {
-                  data: [4, 6, 13, 8, 0],
+                  data: [4, 5, 13, 7, 0],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 159, 64, 1)',
@@ -238,11 +240,13 @@ const Namo = ({ setCategory }) => {
               ],
             }}
           />
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 29</div>
+
         </motion.div>
       </div>
 
       {/* Birthday Module  */}
-      <div className='flex justify-between items-center  text-white gap-12  w-[1000px] mx-auto mt-8'>
+      <div className='flex justify-between items-center  text-white gap-12  w-[1000px] mx-auto pt-5'>
         {/* chart */}
         <motion.div className='w-[600px] h-[300px]  rounded-lg pt-10 '>
           <Bar
@@ -253,7 +257,7 @@ const Namo = ({ setCategory }) => {
               datasets: [
                 {
                   label: 'Current Severity Count',
-                  data: [14, 72, 135, 109, 7],
+                  data: [14, 67, 122, 87, 6],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 159, 64, 1)',
@@ -266,7 +270,10 @@ const Namo = ({ setCategory }) => {
                 },
               ],
             }}
+            
           />
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 296</div>
+
         </motion.div>
         {/* title, logo  */}
         <div className='flex flex-col items-center justify-center gap-3 w-[500px] '>
@@ -350,7 +357,7 @@ const Namo = ({ setCategory }) => {
               datasets: [
                 {
                   label: 'Current Severity Count',
-                  data: [3, 5, 23, 7, 0],
+                  data: [3, 5, 23, 4, 0],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 159, 64, 1)',
@@ -364,6 +371,8 @@ const Namo = ({ setCategory }) => {
               ],
             }}
           />
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 35</div>
+
         </motion.div>
       </div>
     </motion.div>

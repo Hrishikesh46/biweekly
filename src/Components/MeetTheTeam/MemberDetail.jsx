@@ -112,7 +112,7 @@ const MemberDetail = ({ user, setUser }) => {
             <div className='text-3xl mb-3 '>Courses</div>
             <ul className='text-xl gap-3 '>
               {user.courses.map((course) => {
-                return <li>{course}</li>;
+                return <li>- {course}</li>;
               })}
             </ul>
           </div>

@@ -33,7 +33,7 @@ export const MacOSClientData = [
       },
       {
         name: 'Mansa Sharma',
-        nickname: 'Mansa Yedi ',
+        nickname: 'Mansedi ',
         client: 'MacOS',
         profileImg: mansa,
         prevScore: '68',
@@ -56,5 +56,7 @@ export const MacOSClientData = [
     ],
 
     currConsolidatedCount: [3, 14, 30, 31, 2],
+    issuesRaised: 80,
+
   },
 ];

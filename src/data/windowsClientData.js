@@ -72,5 +72,7 @@ export const WindowsClientData = [
       },
     ],
     currConsolidatedCount: [2, 21, 31, 42, 1],
+    issuesRaised: 97,
+
   },
 ];

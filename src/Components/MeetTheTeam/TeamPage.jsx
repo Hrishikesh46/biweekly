@@ -112,6 +112,7 @@ const TeamPage = ({ category, setCategory }) => {
               <div className='flex flex-col gap-2 text-7xl font-bold  '>
                 <div className=''>JioMeet</div>
                 <div className=''>{category[0]?.client}</div>
+                <div className="text-xl pt-3">Total Issues Raised : {category[0]?.issuesRaised}</div>
               </div>
               <motion.div className='w-[350px]   h-[350px]  rounded-lg  '>
                 <Doughnut

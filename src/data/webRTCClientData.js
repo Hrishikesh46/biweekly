@@ -68,5 +68,7 @@ export const WebClientData = [
       },
     ],
     currConsolidatedCount: [4, 22, 33, 38, 6],
+    issuesRaised: 103,
+
   },
 ];

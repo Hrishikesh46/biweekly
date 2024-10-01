@@ -102,5 +102,6 @@ export const AndroidClientData = [
     ],
 
     currConsolidatedCount: [5, 29, 71, 47, 7],
+    issuesRaised: 159
   },
 ];

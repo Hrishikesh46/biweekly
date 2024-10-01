@@ -129,6 +129,7 @@ const JioMeetPage = ({ setCategory }) => {
               ],
             }}
           />
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 30</div>
         </motion.div>
       </div>
 

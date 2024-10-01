@@ -105,7 +105,7 @@ const Peoplefirst = ({ setCategory }) => {
         {/* graph */}
         <motion.div
           
-          className='w-[500px] h-[250px]  rounded-lg mt-4'
+          className='w-[500px] h-[250px]  rounded-lg mt-4 mb-8'
         >
           <Bar
             options={options}
@@ -114,7 +114,7 @@ const Peoplefirst = ({ setCategory }) => {
               datasets: [
                 {
                   label: 'Current Severity Count',
-                  data: [4, 56, 117, 95, 12],
+                  data: [4, 53, 110, 88, 11],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 159, 64, 1)',
@@ -127,6 +127,8 @@ const Peoplefirst = ({ setCategory }) => {
               ],
             }}
           />
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 266</div>
+
         </motion.div>
       </div>
 

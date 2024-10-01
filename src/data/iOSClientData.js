@@ -80,5 +80,7 @@ export const IOSClientData = [
     ],
 
     currConsolidatedCount: [9, 30, 68, 36, 1],
+    issuesRaised: 144
+
   },
 ];
