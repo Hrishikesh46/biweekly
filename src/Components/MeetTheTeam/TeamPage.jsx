@@ -171,7 +171,7 @@ const TeamPage = ({ category, setCategory }) => {
                 if (member.rank === 1) color = '#C29101';
                 else if (member.rank === 2) color = '#EAECEC';
                 else if (member.rank === 3) color = '#B87333';
-                else color = 'white';
+                else color = '#7DF9FF';
                 return (
                   <motion.div
                     key={member.name}

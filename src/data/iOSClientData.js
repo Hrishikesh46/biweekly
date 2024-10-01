@@ -1,10 +1,10 @@
 import iOSLogo from '../assets/Group.png';
-import sahil from '../assets/TeamMembers/SahilDhole.png';
-import dhruv from '../assets/TeamMembers/ColdParmar.jpg';
-import hrishi from '../assets/myImage.png';
-import pranjal from '../assets/TeamMembers/Pranjal.Thigale.jpg';
-import barnali from '../assets/TeamMembers/Barnali.C.jpg';
-import shreya from '../assets/TeamMembers/Shreya3.Srivastava.jpg';
+import sahil from '../assets/TeamMembers/Sahil.webp';
+import dhruv from '../assets/TeamMembers/Dhruv.webp';
+import hrishi from '../assets/TeamMembers/Nakli.webp';
+import pranjal from '../assets/TeamMembers/Pranjal.webp';
+import barnali from '../assets/TeamMembers/Barnali.webp';
+import shreya from '../assets/TeamMembers/Shreya.webp';
 
 export const IOSClientData = [
   {

@@ -1,11 +1,11 @@
 import androidLogo from '../assets/android.png';
-import meeti from '../assets/TeamMembers/Meeti.Shah.jpg';
-import sanika from '../assets/TeamMembers/Sanika.Mhasvekar.jpg';
-import sahara from '../assets/TeamMembers/Sahara.Mali.jpg';
-import riya from '../assets/TeamMembers/Riya.Kesaria.jpg';
-import divyanshi from '../assets/TeamMembers/DivyanshiSrivastava.jpg';
-import yashi from '../assets/TeamMembers/Yashi.Pandey.jpg';
-import nikhil from '../assets/TeamMembers/Nikhil.Jaiswal.jpg';
+import meeti from '../assets/TeamMembers/Meeti.webp';
+import sanika from '../assets/TeamMembers/Sanika.webp';
+import sahara from '../assets/TeamMembers/Sahara.webp';
+import riya from '../assets/TeamMembers/Riya.webp';
+import divyanshi from '../assets/TeamMembers/Divyanshi.webp';
+import yashi from '../assets/TeamMembers/Yashi.webp';
+import nikhil from '../assets/TeamMembers/Nikhil.webp';
 
 export const AndroidClientData = [
   {
@@ -73,7 +73,7 @@ export const AndroidClientData = [
       },
       {
         name: 'Divyanshi S',
-        nickname: '',
+        nickname: 'Divya',
         client: 'Android',
         profileImg: divyanshi,
         prevScore: 'NA',

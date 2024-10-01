@@ -1,10 +1,10 @@
 import windowsLogo from '../assets/windows.png';
 
-import ishita from '../assets/TeamMembers/Ishita1.singh.jpeg';
-import aditi from '../assets/TeamMembers/Aditi_Bukkawar.png';
-import sonali from '../assets/TeamMembers/Sonali.Anand.jpg';
-import pratiksha from '../assets/TeamMembers/Pratiksha.Bhavsar.jpg';
-import khushi from '../assets/TeamMembers/Khushi.Bohre.jpg';
+import ishita from '../assets/TeamMembers/Ishita.webp';
+import aditi from '../assets/TeamMembers/Aditi.webp';
+import sonali from '../assets/TeamMembers/Sonali.webp';
+import pratiksha from '../assets/TeamMembers/Pratiksha.webp';
+import khushi from '../assets/TeamMembers/Khushi.webp';
 
 export const WindowsClientData = [
   {

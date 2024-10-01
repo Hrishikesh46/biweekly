@@ -1,10 +1,10 @@
 import webLogo from '../assets/webrtc.png';
 
-import kunal from '../assets/TeamMembers/Kunal.Jaiswal.jpg';
-import soumya from '../assets/TeamMembers/Soumya3.Sinha.jpg';
-import alwis from '../assets/TeamMembers/Alwis.Shaji.jpg';
-import ayush from '../assets/TeamMembers/Ayush_Pandey.jfif';
-import aniruddh from '../assets/TeamMembers/Aniruddh.Ghewade.jpg';
+import kunal from '../assets/TeamMembers/Kunal.webp';
+import soumya from '../assets/TeamMembers/Soumya.webp';
+import alwis from '../assets/TeamMembers/Alwis.webp';
+import ayush from '../assets/TeamMembers/Ayush.webp';
+import aniruddh from '../assets/TeamMembers/Aniruddh.webp';
 
 export const WebClientData = [
   {
