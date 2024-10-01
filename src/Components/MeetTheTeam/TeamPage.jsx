@@ -80,7 +80,9 @@ const options = {
 };
 
 const TeamPage = ({ category, setCategory }) => {
+  let color;
   const [userDetail, setUserDetail] = useState('');
+
   const handleUserDetail = (member) => {
     console.log(member);
     setUserDetail(member);
@@ -166,12 +168,15 @@ const TeamPage = ({ category, setCategory }) => {
               className='pl-24 pr-24 w-full  grid grid-cols-3   p-2 gap-4'
             >
               {category[0].clientMembers.map((member) => {
-                let color;
-
-                if (member.rank === 1) color = '#C29101';
-                else if (member.rank === 2) color = '#EAECEC';
-                else if (member.rank === 3) color = '#B87333';
-                else color = '#7DF9FF';
+                if (member.rank === 1) {
+                  color = '#C29101'; // Gold
+                } else if (member.rank === 2) {
+                  color = '#EAECEC'; // Silver
+                } else if (member.rank === 3) {
+                  color = '#B87333'; // Bronze
+                } else {
+                  color = '#7DF9FF'; // Default color (light blue)
+                }
                 return (
                   <motion.div
                     key={member.name}

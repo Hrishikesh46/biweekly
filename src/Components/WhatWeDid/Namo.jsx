@@ -131,10 +131,7 @@ const Namo = ({ setCategory }) => {
       </div>
       <div className=' flex justify-evenly items-center  text-white pt-16 '>
         {/* Pie chart */}
-        <motion.div
-          
-          className='w-[300px]   h-[300px]  rounded-lg  '
-        >
+        <motion.div className='w-[300px]   h-[300px]  rounded-lg  '>
           <Doughnut
             options={optionsDoughnut}
             data={{
@@ -219,10 +216,7 @@ const Namo = ({ setCategory }) => {
           </div>
         </div>
         {/* chart */}
-        <motion.div
-        
-          className='w-[600px] h-[300px]  rounded-lg pt-10 '
-        >
+        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-10 '>
           <Bar
             options={optionsBar}
             data={{
@@ -230,8 +224,7 @@ const Namo = ({ setCategory }) => {
 
               datasets: [
                 {
-                  
-                  data: [20, 43, 59, 23, 34],
+                  data: [4, 6, 13, 8, 0],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 159, 64, 1)',
@@ -251,10 +244,7 @@ const Namo = ({ setCategory }) => {
       {/* Birthday Module  */}
       <div className='flex justify-between items-center  text-white gap-12  w-[1000px] mx-auto mt-8'>
         {/* chart */}
-        <motion.div
-          
-          className='w-[600px] h-[300px]  rounded-lg pt-10 '
-        >
+        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-10 '>
           <Bar
             options={optionsBar}
             data={{
@@ -263,7 +253,7 @@ const Namo = ({ setCategory }) => {
               datasets: [
                 {
                   label: 'Current Severity Count',
-                  data: [20, 43, 59, 23, 34],
+                  data: [14, 72, 135, 109, 7],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 159, 64, 1)',
@@ -330,7 +320,9 @@ const Namo = ({ setCategory }) => {
 
               {/* description */}
               <div className='text-sm '>
-              This module was created to honour Pandit DeanDayal Upadhyaya the forerunner of Bharatiya Janata Party on the occasion of his Birthday. 
+                This module was created to honour Pandit DeanDayal Upadhyaya the
+                forerunner of Bharatiya Janata Party on the occasion of his
+                Birthday.
               </div>
             </div>
           </div>
@@ -342,18 +334,14 @@ const Namo = ({ setCategory }) => {
             >
               <div className=''>Accomplishments</div>
               <div className='text-sm '>
-              We raised over 300 issues in this module to make sure that there
+                We raised over 300 issues in this module to make sure that there
                 is not BCM issues before going live on production.
-
               </div>
             </div>
           </div>
         </div>
         {/* chart */}
-        <motion.div
-          
-          className='w-[600px] h-[300px]  rounded-lg pt-10 '
-        >
+        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-10 '>
           <Bar
             options={optionsBar}
             data={{
@@ -362,7 +350,7 @@ const Namo = ({ setCategory }) => {
               datasets: [
                 {
                   label: 'Current Severity Count',
-                  data: [20, 43, 59, 23, 34],
+                  data: [3, 5, 23, 7, 0],
                   backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 159, 64, 1)',
