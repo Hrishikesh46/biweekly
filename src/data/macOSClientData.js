@@ -1,7 +1,7 @@
 import macLogo from '../assets/MacOS.png';
 import ameya from '../assets/TeamMembers/Ameya.webp';
 import nikita from '../assets/TeamMembers/Nikita.webp';
-import isha from '../assets/TeamMembers/Nikita.webp';
+import isha from '../assets/TeamMembers/Isha.webp';
 import mansa from '../assets/TeamMembers/Mansa.webp';
 
 export const MacOSClientData = [
