@@ -166,6 +166,12 @@ const TeamPage = ({ category, setCategory }) => {
               className='pl-24 pr-24 w-full  grid grid-cols-3   p-2 gap-4'
             >
               {category[0].clientMembers.map((member) => {
+                let color;
+
+                if (member.rank === 1) color = '#C29101';
+                else if (member.rank === 2) color = '#EAECEC';
+                else if (member.rank === 3) color = '#B87333';
+                else color = 'white';
                 return (
                   <motion.div
                     key={member.name}
@@ -182,88 +188,31 @@ const TeamPage = ({ category, setCategory }) => {
                       <img
                         src={member.profileImg}
                         alt=''
-                        className={`w-32 h-32 p-1 mx-auto mt-4 object-contain border-[3px] ${
-                          member.rank === 1
-                            ? 'border-[#C29101]'
-                            : 'border-white'
-                        } ${
-                          member.rank === 2
-                            ? 'border-[#EAECEC]'
-                            : 'border-white'
-                        } ${
-                          member.rank === 3
-                            ? 'border-[#B87333]'
-                            : 'border-white'
-                        }  rounded-full `}
+                        className={`w-32 h-32 p-1 mx-auto mt-4 object-contain border-[${color}] border-[3px] 
+                           rounded-full `}
                       />
 
                       {/* name */}
                       <div
-                        className={`text-center text-2xl p-2 font-semibold ${
-                          member.rank === 1 ? 'text-[#C29101]' : 'text-white'
-                        } ${
-                          member.rank === 2 ? 'text-[#EAECEC]' : 'text-white'
-                        } ${
-                          member.rank === 3 ? 'text-[#B87333]' : 'text-white'
-                        }  `}
+                        className={`text-center text-2xl p-2 font-semibold text-[${color}] `}
                       >
                         {member.name}
                       </div>
 
                       {/* score */}
                       <div className='mx-auto flex gap-10 text-xl pb-4'>
-                        <div
-                          className={`pt-1 font-semibold ${
-                            member.rank === 1 ? 'text-[#C29101]' : 'text-white'
-                          } ${
-                            member.rank === 2 ? 'text-[#EAECEC]' : 'text-white'
-                          } ${
-                            member.rank === 3 ? 'text-[#B87333]' : 'text-white'
-                          } `}
-                        >
+                        <div className={`pt-1 font-semibold text-[${color}] `}>
                           Prev Score{' '}
                           <div
-                            className={`text-center font-semibold ${
-                              member.rank === 1
-                                ? 'text-[#C29101]'
-                                : 'text-white'
-                            } ${
-                              member.rank === 2
-                                ? 'text-[#EAECEC]'
-                                : 'text-white'
-                            } ${
-                              member.rank === 3
-                                ? 'text-[#B87333]'
-                                : 'text-white'
-                            }  `}
+                            className={`text-center font-semibold text-[${color}]  `}
                           >
                             {member.prevScore}
                           </div>
                         </div>
-                        <div
-                          className={`pt-1 font-semibold ${
-                            member.rank === 1 ? 'text-[#C29101]' : 'text-white'
-                          } ${
-                            member.rank === 2 ? 'text-[#EAECEC]' : 'text-white'
-                          } ${
-                            member.rank === 3 ? 'text-[#B87333]' : 'text-white'
-                          } `}
-                        >
+                        <div className={`pt-1 font-semibold text-[${color}] `}>
                           Curr score{' '}
                           <div
-                            className={`text-center font-semibold ${
-                              member.rank === 1
-                                ? 'text-[#C29101]'
-                                : 'text-white'
-                            } ${
-                              member.rank === 2
-                                ? 'text-[#EAECEC]'
-                                : 'text-white'
-                            } ${
-                              member.rank === 3
-                                ? 'text-[#B87333]'
-                                : 'text-white'
-                            } `}
+                            className={`text-center font-semibold text-[${color}] `}
                           >
                             {member.currScore}
                           </div>
