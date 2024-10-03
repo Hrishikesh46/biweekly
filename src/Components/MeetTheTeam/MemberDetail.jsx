@@ -39,14 +39,21 @@ const optionsBar = {
   },
   scales: {
     x: {
+      grid:{
+        display:false
+      },
       ticks: {
         color: 'White', // Change the font color of the x-axis labels
         font: {
           size: 14,
         },
+        
       },
     },
     y: {
+      grid:{
+        display:false
+      },
       ticks: {
         color: 'White', // Change the font color of the y-axis labels
         font: {

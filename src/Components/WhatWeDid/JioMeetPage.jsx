@@ -67,7 +67,7 @@ const JioMeetPage = ({ setCategory }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
       exit={{ opacity: 0, y: 80, transition: 0.4 }}
-      className='w-[1200px] mx-auto  h-screen overscroll-contain overflow-scroll  absolute mb-4 '
+      className='w-[1200px] mx-auto  h-screen overscroll-contain overflow-scroll relative '
     >
       {/* Back button */}
       <div
@@ -84,7 +84,7 @@ const JioMeetPage = ({ setCategory }) => {
         <div className='flex flex-col text-white  gap-3 w-1/3 '>
           <div
             className='flex justify-start
-           items-center gap-2 pt-14 '
+           items-center gap-2 pt-6 '
           >
             {/* logo */}
             <img src={jiomeetLogo} alt='' className='h-14 w-14 self-end' />

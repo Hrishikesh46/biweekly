@@ -1,6 +1,10 @@
 import pmImg from '../../assets/pmmodi.png';
 
+import foundersday from '../../assets/foundersday.jpg';
+import bday from '../../assets/bdayModule.png';
+
 import jandhanlogo from '../../assets/jandhanlogo.png';
+
 import tickIcon from '../../assets/AccomplishmentIcon.png';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { motion } from 'framer-motion';
@@ -279,9 +283,9 @@ const Namo = ({ setCategory }) => {
         <div className='flex flex-col items-center justify-center gap-3 w-[500px] '>
           <div className='flex items-center justify-center gap-4 bg-[#4B62E1] pl-8 p-2 h-auto   rounded-r-full '>
             <img
-              src={jandhanlogo}
+              src={bday}
               alt=''
-              className='w-20 h-20 bg-white rounded-xl '
+              className='w-20 h-20 bg-white rounded-xl object-contain '
             />
             <div className='flex flex-col gap-1  '>
               {/* title */}
@@ -317,9 +321,9 @@ const Namo = ({ setCategory }) => {
         <div className='flex flex-col items-center justify-center gap-3 w-[500px] '>
           <div className='flex items-center justify-center gap-4 bg-[#4B62E1] pl-8 p-2 h-auto   rounded-l-full '>
             <img
-              src={jandhanlogo}
+              src={foundersday}
               alt=''
-              className='w-20 h-20 bg-white rounded-xl '
+              className='w-20 h-20 bg-white rounded-xl object-contain '
             />
             <div className='flex flex-col gap-2  '>
               {/* title */}
