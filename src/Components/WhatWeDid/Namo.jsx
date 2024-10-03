@@ -352,7 +352,7 @@ const Namo = ({ setCategory }) => {
           </div>
         </div>
         {/* chart */}
-        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-10 '>
+        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-4 '>
           <Bar
             options={optionsBar}
             data={{
