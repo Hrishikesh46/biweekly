@@ -105,10 +105,7 @@ const JioMeetPage = ({ setCategory }) => {
         </div>
 
         {/* graph */}
-        <motion.div
-          
-          className='w-[500px] h-[300px] pt-12  p-1  rounded-lg '
-        >
+        <motion.div className='w-[500px] h-[300px] pt-12  p-1  rounded-lg '>
           <Bar
             options={options}
             data={{
@@ -116,7 +113,7 @@ const JioMeetPage = ({ setCategory }) => {
               datasets: [
                 {
                   label: false,
-                  data: [2,3, 5, 18, 2],
+                  data: [2, 3, 5, 18, 2],
                   backgroundColor: [
                     'rgba(255, 99, 132, 0.8)',
                     'rgba(255, 159, 64, 0.8)',
@@ -129,7 +126,9 @@ const JioMeetPage = ({ setCategory }) => {
               ],
             }}
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 30</div>
+          <div className='text-white text-xl text-center pt-2'>
+            Total Issues Raised: 30
+          </div>
         </motion.div>
       </div>
 
@@ -159,34 +158,35 @@ const JioMeetPage = ({ setCategory }) => {
         <div className='flex flex-col gap-3 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
           <div className='text-2xl font-bold'>
-          Post-deployment testing (PDT)
+            Post-deployment testing (PDT)
           </div>
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-          PDT verifies major functionalities immediately after software deployment to ensure everything works correctly in production.
+            PDT verifies major functionalities immediately after software
+            deployment to ensure everything works correctly in production.
           </div>
         </div>
         <div className='flex flex-col gap-3 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
-          <div className='text-2xl font-bold'>
-          Post Deployment Sanity
-          </div>
+          <div className='text-2xl font-bold'>Post Deployment Sanity</div>
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-           PDS checks new features in production, ensuring functionality works correctly and doesn’t disrupt existing features. Bugs are raised if issues arise.
+            PDS checks new features in production, ensuring functionality works
+            correctly and doesn’t disrupt existing features. Bugs are raised if
+            issues arise.
           </div>
         </div>
         <div className='flex flex-col gap-8 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
-          <div className='text-2xl font-bold'>
-            Load Testing
-          </div>
+          <div className='text-2xl font-bold'>Load Testing</div>
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-          To evaluates how JioMeet behaves under a specific, expected load. The main goal is to check if system can handle the anticipated amount of work and find potential points of failure 
+            To evaluates how JioMeet behaves under a specific, expected load.
+            The main goal is to check if system can handle the anticipated
+            amount of work and find potential points of failure
           </div>
         </div>
       </div>
