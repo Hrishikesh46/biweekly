@@ -4,9 +4,9 @@ import teamImg from '../../assets/team_photo.jpg';
 
 const LandingPage = () => {
   return (
-    <div className='m-4 rounded-2xl'>
+    <div className='flex items-center justify-center h-[100vh] rounded-2xl '>
       <div
-        className=' h-[750px] w-full bg-cover  bg-no-repeat bg-center rounded-2xl '
+        className=' w-full mx-2 h-[95vh] bg-cover  bg-no-repeat bg-center rounded-2xl '
         style={{
           backgroundImage: `url(${teamImg})`,
         }}

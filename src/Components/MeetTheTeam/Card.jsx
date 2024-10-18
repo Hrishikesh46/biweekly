@@ -12,7 +12,7 @@ const Card = () => {
   const [category, setCategory] = useState('');
 
   return (
-    <motion.div className='h-screen  relative flex flex-col gap-8 justify-center '>
+    <motion.div className='h-full  relative flex  flex-col gap-16  justify-center '>
       {/* Heading */}
 
       {!category && (
@@ -20,7 +20,7 @@ const Card = () => {
           initial={{ y: -80, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.4 }}
-          className='text-center text-7xl text-white '
+          className='text-center  text-7xl text-white '
         >
           Meet The Team
         </motion.div>
@@ -32,7 +32,7 @@ const Card = () => {
           initial={{ y: -150, opacity: 0 }}
           transition={{ duration: 0.5 }}
           animate={{ y: 0, opacity: 1 }}
-          className='my-8 h-[500px] flex flex-wrap justify-center  gap-8   pr-8 '
+          className=' h-[60vh] flex flex-wrap justify-center  gap-8   pr-8 '
         >
           {/* Individual clients*/}
           <motion.div

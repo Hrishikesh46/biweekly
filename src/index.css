@@ -10,4 +10,7 @@
   .overflow-scroll::-webkit-scrollbar {
     display: none;
   }
+  .btn{
+    @apply w-5 h
+  }
 }
