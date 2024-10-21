@@ -103,7 +103,7 @@ const TeamPage = ({ category, setCategory }) => {
         }}
         exit={{ y: 120, opacity: 0 }}
         transition={{ duration: 0.3 }}
-        className='w-[1100px] mx-auto h-screen text-white absolute inset-0  bg-cover z-100 overflow-scroll overscroll-contain  '
+        className='w-[1100px] mx-auto mb-12 h-screen text-white absolute inset-0  bg-cover z-100 overflow-scroll overscroll-contain  '
       >
         {/* Team name and Data graph */}
         {userDetail === '' && (
@@ -172,11 +172,11 @@ const TeamPage = ({ category, setCategory }) => {
                 if (member.rank === 1) {
                   color = '#C29101'; // Gold
                 } else if (member.rank === 2) {
-                  color = '#EAECEC'; // Silver
+                  color = '#ababb0'; // Silver
                 } else if (member.rank === 3) {
                   color = '#B87333'; // Bronze
                 } else {
-                  color = '#7DF9FF'; // Default color (light blue)
+                  color = '#fff'; // Default color (light blue)
                 }
                 return (
                   <motion.div
@@ -196,29 +196,30 @@ const TeamPage = ({ category, setCategory }) => {
                         alt=''
                         className={`w-32 h-32 p-1 mx-auto mt-4 object-contain border-[${color}] border-[3px] 
                            rounded-full `}
+                           style={{borderColor: color}}
                       />
 
                       {/* name */}
                       <div
-                        className={`text-center text-2xl p-2 font-semibold text-[${color}] `}
+                        className={`text-center text-2xl p-2 font-semibold `} style={{color: color}}
                       >
                         {member.name}
                       </div>
 
                       {/* score */}
                       <div className='mx-auto flex gap-10 text-xl pb-4'>
-                        <div className={`pt-1 font-semibold text-[${color}] `}>
+                        <div className={`pt-1 font-semibold `} style={{color:color}} >
                           Prev Score{' '}
                           <div
-                            className={`text-center font-semibold text-[${color}]  `}
+                            className={`text-center font-semibold   `} style={{color:color}}
                           >
                             {member.prevScore}
                           </div>
                         </div>
-                        <div className={`pt-1 font-semibold text-[${color}] `}>
+                        <div className={`pt-1 font-semibold  `}style={{color:color}}>
                           Curr score{' '}
                           <div
-                            className={`text-center font-semibold text-[${color}] `}
+                            className={`text-center font-semibold `}style={{color:color}}
                           >
                             {member.currScore}
                           </div>

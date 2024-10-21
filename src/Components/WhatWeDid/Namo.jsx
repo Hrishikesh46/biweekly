@@ -2,6 +2,7 @@ import pmImg from '../../assets/pmmodi.png';
 
 import foundersday from '../../assets/foundersday.jpg';
 import bday from '../../assets/bdayModule.png';
+import sweep from '../../assets/sweep.png'
 
 import jandhanlogo from '../../assets/jandhanlogo.png';
 
@@ -158,7 +159,7 @@ const Namo = ({ setCategory }) => {
               ],
             }}
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 381</div>
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 400+</div>
 
         </motion.div>
 
@@ -178,7 +179,7 @@ const Namo = ({ setCategory }) => {
 
           {/* description */}
           <div className='text-lg  '>
-            A User-Friendly ,official Application for our Prime Minister
+            A User-Friendly ,official application for our Prime Minister
             Narendra Modi. Users can engage with his activities, speeches, and
             government initiatives.
           </div>
@@ -200,7 +201,7 @@ const Namo = ({ setCategory }) => {
               <div className=''>Jan Dhan Yojana</div>
 
               {/* description */}
-              <div className='text-sm '>
+              <div className='text-sm font-normal'>
                 known as the "Jan Dhan 10/10 Challenge," invites participants to
                 answer 10 simple questions about the scheme. It is based on the
                 flagship initiative launched by the government in 2014
@@ -214,9 +215,9 @@ const Namo = ({ setCategory }) => {
               '
             >
               <div className=''>Accomplishments</div>
-              <div className='text-sm '>
-                We raised over 140 issues in this module to make sure that there
-                is not BCM issues before going liv on production.
+              <div className='text-sm font-normal'>
+              We raised over 30 issues in this module to make sure that there
+                were no Blocker, Critical or Major issues that would hamper the release 
               </div>
             </div>
           </div>
@@ -276,7 +277,7 @@ const Namo = ({ setCategory }) => {
             }}
             
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 296</div>
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 301</div>
 
         </motion.div>
         {/* title, logo  */}
@@ -292,7 +293,7 @@ const Namo = ({ setCategory }) => {
               <div className=''>Birthday Module</div>
 
               {/* description */}
-              <div className='text-sm '>
+              <div className='text-sm font-normal'>
                 Birthday Engagement feature in the NaMo App is a unique way for
                 users to extend their birthday wishes to Prime Minister Narendra
                 Modi.
@@ -306,9 +307,9 @@ const Namo = ({ setCategory }) => {
               '
             >
               <div className=''>Accomplishments</div>
-              <div className='text-sm '>
-                We raised over 300 issues in this module to make sure that there
-                is not BCM issues before going live on production.
+              <div className='text-sm font-normal'>
+              We raised over 300 issues in this module to make sure that there
+                were no Blocker, Critical or Major issues that would hamper the release 
               </div>
             </div>
           </div>
@@ -330,7 +331,7 @@ const Namo = ({ setCategory }) => {
               <div className=''>Founder's Day Quiz</div>
 
               {/* description */}
-              <div className='text-sm '>
+              <div className='text-sm font-normal'>
                 This module was created to honour Pandit DeanDayal Upadhyaya the
                 forerunner of Bharatiya Janata Party on the occasion of his
                 Birthday.
@@ -344,9 +345,9 @@ const Namo = ({ setCategory }) => {
               '
             >
               <div className=''>Accomplishments</div>
-              <div className='text-sm '>
-                We raised over 300 issues in this module to make sure that there
-                is not BCM issues before going live on production.
+              <div className='text-sm font-normal'>
+              We raised over 40 issues in this module to make sure that there
+                were no Blocker, Critical or Major issues that would hamper the release 
               </div>
             </div>
           </div>
@@ -379,6 +380,71 @@ const Namo = ({ setCategory }) => {
 
         </motion.div>
       </div>
+
+      {/* Sweep Module */}
+      <div className='flex justify-between items-center  text-white gap-12  w-[1000px] mx-auto py-5'>
+        {/* chart */}
+        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-5 '>
+          <Bar
+            options={optionsBar}
+            data={{
+              labels: ['Blocker', 'Critical', 'Major', 'Normal', 'Minor'],
+
+              datasets: [
+                {
+                  label: 'Current Severity Count',
+                  data: [3, 9, 12, 1, 0],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(255, 205, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(54, 162, 235, 1)',
+                  ],
+                  borderRadius: 5,
+                  borderColor: 'none',
+                },
+              ],
+            }}
+            
+          />
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 25</div>
+
+        </motion.div>
+        {/* title, logo  */}
+        <div className='flex flex-col items-center justify-center gap-3 w-[500px] '>
+          <div className='flex items-center justify-center gap-4 bg-[#4B62E1] pl-8 p-2 h-auto   rounded-r-full '>
+            <img
+              src={sweep}
+              alt=''
+              className='w-20 h-20 bg-white rounded-xl object-cover '
+            />
+            <div className='flex flex-col gap-1  '>
+              {/* title */}
+              <div className=''>Sweep Module</div>
+
+              {/* description */}
+              <div className='text-sm font-normal'>
+              This project was launched by PM Narendra Modi to honor Mahatma Gandhi's birthday, reflecting our commitment to promoting cleanliness and sustainability across the nation.
+              </div>
+            </div>
+          </div>
+          <div className='flex items-center justify-center  bg-[#ED800F]  pl-8 p-2 h-auto w-[500px] rounded-r-full  '>
+            <img src={tickIcon} alt='' className='h-24 w-24' />
+            <div
+              className='flex flex-col gap-1
+              '
+            >
+              <div className=''>Accomplishments</div>
+              <div className='text-sm font-normal'>
+                We raised over 30 issues in this module to make sure that there
+                were no Blocker, Critical or Major issues that would hamper the release 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </motion.div>
   );
 };

@@ -98,7 +98,7 @@ const JioMeetPage = ({ setCategory }) => {
 
           {/* description */}
           <p className=' text-xl pt-4'>
-            JioMeet integrates HD video conferencing, content sharing, and chat
+            JioMeet/JioEvents integrates HD video conferencing, content sharing, and chat
             collaboration, allowing users to schedule calls or host meetings
             from any device.
           </p>
@@ -158,7 +158,7 @@ const JioMeetPage = ({ setCategory }) => {
         <div className='flex flex-col gap-3 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
           <div className='text-2xl font-bold'>
-            Post-deployment testing (PDT)
+            Post-Deployment Testing (PDT)
           </div>
 
           {/* description */}
@@ -169,7 +169,7 @@ const JioMeetPage = ({ setCategory }) => {
         </div>
         <div className='flex flex-col gap-3 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
-          <div className='text-2xl font-bold'>Post Deployment Sanity</div>
+          <div className='text-2xl font-bold'>Post-Deployment Sanity</div>
 
           {/* description */}
           <div className='text-[16px] leading-6'>

@@ -98,7 +98,7 @@ const Peoplefirst = ({ setCategory }) => {
 
           {/* description */}
           <p className=' text-xl pt-3'>
-           It is an internal portal designed specifically for Reliance users, providing a comprehensive platform to manage HR-related activities such as attendance, payroll, leaves, and other employee self-service functions.
+           It is an internal portal designed specifically for Reliance employees, providing a comprehensive platform to manage HR-related activities such as attendance, payroll, leaves, and other employee self-service functions.
           </p>
         </div>
 

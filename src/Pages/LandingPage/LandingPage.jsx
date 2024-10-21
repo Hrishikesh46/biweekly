@@ -1,4 +1,5 @@
 import Header from '../../Components/LandingPage/Header';
+import BiWeeklyTimeline from '../../Components/LandingPage/BiWeeklyTimeline'
 
 import teamImg from '../../assets/team_photo.jpg';
 
@@ -20,7 +21,7 @@ const LandingPage = () => {
           }}
         ></div>
 
-        {/* <BiWeeklyTimeline /> */}
+        <BiWeeklyTimeline />
       </div>
     </div>
   );

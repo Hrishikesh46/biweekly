@@ -15,7 +15,7 @@ const CategoryDetail = () => {
   const [category, setCategory] = useState('');
   console.log(category);
   return (
-    <div className='h-[100vh]  '>
+    <div id='taskPerformed' className='h-[100vh]  '>
       {/* Heading */}
       {/* Category section */}
       <AnimatePresence mode='wait'>

@@ -5,7 +5,7 @@ import TeamPage from '../../Components/MeetTheTeam/TeamPage';
 const MeetTeamPage = () => {
   const [category, setCategory] = useState(null);
   return (
-    <div className='w-[1100px] mx-auto h-[100vh] mb-16  '>
+    <div className='w-[1100px] mx-auto h-[100vh]  '>
       <Card />
 
       {/* <TeamPage /> */}

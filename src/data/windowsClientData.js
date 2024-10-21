@@ -55,7 +55,7 @@ export const WindowsClientData = [
         profileImg: pratiksha,
         prevScore: '42',
         currScore: '83',
-        courses: [' Introduction to React'],
+        courses: [' Programming with Javacript'],
         rank: 4,
         CurrSeverity: [0, 6, 4, 5, 0],
       },
