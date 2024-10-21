@@ -12,7 +12,7 @@ const Card = () => {
   const [category, setCategory] = useState('');
 
   return (
-    <motion.div className='  relative flex  flex-col gap-16  justify-center '>
+    <motion.div className='   relative flex  flex-col gap-16  justify-center items-center '>
       {/* Heading */}
 
       {!category && (
@@ -32,7 +32,7 @@ const Card = () => {
           initial={{ y: -150, opacity: 0 }}
           transition={{ duration: 0.5 }}
           animate={{ y: 0, opacity: 1 }}
-          className=' h-[60vh] flex flex-wrap justify-center gap-8 pr-8 '
+          className='  flex flex-wrap justify-center gap-8 pr-8 '
         >
           {/* Individual clients*/}
           <motion.div

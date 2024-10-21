@@ -103,7 +103,7 @@ const TeamPage = ({ category, setCategory }) => {
         }}
         exit={{ y: 120, opacity: 0 }}
         transition={{ duration: 0.3 }}
-        className='w-[1100px] mx-auto mb-12 h-screen text-white absolute inset-0  bg-cover z-100 overflow-scroll overscroll-contain  '
+        className='w-[1100px] mx-auto   h-[100vh] text-white absolute inset-0  bg-cover z-100 overflow-scroll overscroll-contain  '
       >
         {/* Team name and Data graph */}
         {userDetail === '' && (
@@ -166,7 +166,7 @@ const TeamPage = ({ category, setCategory }) => {
               }}
               exit={{ y: 180, opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className='pl-24 pr-24 w-full  grid grid-cols-3   p-2 gap-4'
+              className='px-24 py-24 w-full  grid grid-cols-3    gap-4'
             >
               {category[0].clientMembers.map((member) => {
                 if (member.rank === 1) {
@@ -183,7 +183,7 @@ const TeamPage = ({ category, setCategory }) => {
                     key={member.name}
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.4 }}
-                    className='h-[260px] w-[270px] bg-gray-500 bg-opacity-50 rounded-lg'
+                    className='h-[260px]  w-[270px] bg-gray-500 bg-opacity-50 rounded-lg'
                     onClick={() => handleUserDetail(member)}
                   >
                     <div

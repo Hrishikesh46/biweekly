@@ -70,7 +70,7 @@ const MemberDetail = ({ user, setUser }) => {
       initial={{ y: 180, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className=' w-[1000px] mx-auto h-screen  overflow-hidden flex flex-col justify-center items-center  '
+      className=' w-[1000px] mx-auto h-full  overflow-hidden flex flex-col justify-center items-center  '
     >
       {/* profile and name */}
       <motion.div className='flex flex-col gap-4 rounded-3xl bg-[#2a2626] pt-8  h-[600px] '>

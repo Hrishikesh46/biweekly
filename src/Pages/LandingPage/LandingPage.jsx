@@ -21,7 +21,7 @@ const LandingPage = () => {
           }}
         ></div>
 
-        <BiWeeklyTimeline />
+        {/* <BiWeeklyTimeline /> */}
       </div>
     </div>
   );
