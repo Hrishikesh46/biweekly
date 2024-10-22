@@ -103,7 +103,7 @@ const optionsBar = {
         color: 'White', // Change the font color of the x-axis labels
         font: {
           size: 14,
-        },
+        }, 
       },
     },
     y: {
@@ -116,7 +116,8 @@ const optionsBar = {
     },
   },
 };
-const Namo = ({ setCategory }) => {
+const Namo = ({ setCategory, parentRef }) => {
+
   return (
     <motion.div
       key='namo'
@@ -124,7 +125,7 @@ const Namo = ({ setCategory }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
       exit={{ opacity: 0, y: 80 }}
-      className='w-[1200px] h-screen overflow-scroll  mx-auto flex flex-col absolute  gap-8 overscroll-contain  '
+      className='w-[1200px] h-auto   mx-auto flex flex-col  top-0 left-auto bottom-0  gap-8   '
     >
       {/* Back button */}
       <div
@@ -134,7 +135,7 @@ const Namo = ({ setCategory }) => {
       >
         <IoMdArrowRoundBack />
       </div>
-      <div className=' flex justify-evenly items-center  text-white pt-16 '>
+      <div className=' flex justify-evenly items-center  text-white pt-10 '>
         {/* Pie chart */}
         <motion.div className='w-[300px]   h-[300px]  rounded-lg  '>
           <Doughnut
@@ -159,7 +160,7 @@ const Namo = ({ setCategory }) => {
               ],
             }}
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 400+</div>
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised - 395</div>
 
         </motion.div>
 
@@ -178,8 +179,8 @@ const Namo = ({ setCategory }) => {
           </div>
 
           {/* description */}
-          <div className='text-lg  '>
-            A User-Friendly ,official application for our Prime Minister
+          <div className='text-lg  font-normal'>
+            A User-Friendly, official application for our Prime Minister
             Narendra Modi. Users can engage with his activities, speeches, and
             government initiatives.
           </div>
@@ -204,7 +205,7 @@ const Namo = ({ setCategory }) => {
               <div className='text-sm font-normal'>
                 known as the "Jan Dhan 10/10 Challenge," invites participants to
                 answer 10 simple questions about the scheme. It is based on the
-                flagship initiative launched by the government in 2014
+                flagship initiative launched by the government in 2014.
               </div>
             </div>
           </div>
@@ -216,8 +217,8 @@ const Namo = ({ setCategory }) => {
             >
               <div className=''>Accomplishments</div>
               <div className='text-sm font-normal'>
-              We raised over 30 issues in this module to make sure that there
-                were no Blocker, Critical or Major issues that would hamper the release 
+              We raised 29 issues in this module to make sure that there
+                were no Blocker, Critical or Major issues that would hamper the release. 
               </div>
             </div>
           </div>
@@ -245,7 +246,7 @@ const Namo = ({ setCategory }) => {
               ],
             }}
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 29</div>
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised - 29</div>
 
         </motion.div>
       </div>
@@ -277,7 +278,7 @@ const Namo = ({ setCategory }) => {
             }}
             
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 301</div>
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised - 296</div>
 
         </motion.div>
         {/* title, logo  */}
@@ -308,8 +309,8 @@ const Namo = ({ setCategory }) => {
             >
               <div className=''>Accomplishments</div>
               <div className='text-sm font-normal'>
-              We raised over 300 issues in this module to make sure that there
-                were no Blocker, Critical or Major issues that would hamper the release 
+              We raised 301 issues in this module to make sure that there
+                were no Blocker, Critical or Major issues that would hamper the release. 
               </div>
             </div>
           </div>
@@ -346,8 +347,8 @@ const Namo = ({ setCategory }) => {
             >
               <div className=''>Accomplishments</div>
               <div className='text-sm font-normal'>
-              We raised over 40 issues in this module to make sure that there
-                were no Blocker, Critical or Major issues that would hamper the release 
+              We raised 35 issues in this module to make sure that there
+                were no Blocker, Critical or Major issues that would hamper the release. 
               </div>
             </div>
           </div>
@@ -376,7 +377,7 @@ const Namo = ({ setCategory }) => {
               ],
             }}
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 35</div>
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised - 35</div>
 
         </motion.div>
       </div>
@@ -408,7 +409,7 @@ const Namo = ({ setCategory }) => {
             }}
             
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 25</div>
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised - 25</div>
 
         </motion.div>
         {/* title, logo  */}
@@ -424,8 +425,8 @@ const Namo = ({ setCategory }) => {
               <div className=''>Sweep Module</div>
 
               {/* description */}
-              <div className='text-sm font-normal'>
-              This project was launched by PM Narendra Modi to honor Mahatma Gandhi's birthday, reflecting our commitment to promoting cleanliness and sustainability across the nation.
+              <div className='text-sm font-normal pr-2'>
+              This project was launched by PM Narendra Modi to honor Mahatma Gandhi&apos;s birthday, reflecting our commitment to promoting cleanliness and sustainability across the nation.
               </div>
             </div>
           </div>
@@ -437,8 +438,8 @@ const Namo = ({ setCategory }) => {
             >
               <div className=''>Accomplishments</div>
               <div className='text-sm font-normal'>
-                We raised over 30 issues in this module to make sure that there
-                were no Blocker, Critical or Major issues that would hamper the release 
+                We raised over 25 issues in this module to make sure that there
+                were no Blocker, Critical or Major issues that would hamper the release. 
               </div>
             </div>
           </div>

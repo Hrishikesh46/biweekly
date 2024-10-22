@@ -71,14 +71,14 @@ const Peoplefirst = ({ setCategory }) => {
     >
       {/* Back button */}
       <div
-        className='absolute top-1 left-6  text-white hover:scale-105 duration-300 border border-white p-2 rounded-xl '
+        className='absolute top-1 left-2  text-white hover:scale-105 duration-300 border border-white p-2 rounded-xl '
         onClick={() => setCategory('')}
       >
         <IoMdArrowRoundBack />
       </div>
 
       {/* title and graph */}
-      <div className='w-full h-auto flex justify-center items-center gap-28 pt-16 '>
+      <div className='w-full h-auto flex justify-center items-center gap-28 pt-8 '>
         {/* title */}
 
         <div className='flex flex-col text-white  gap-3 w-1/3 '>
@@ -97,7 +97,7 @@ const Peoplefirst = ({ setCategory }) => {
           </div> */}
 
           {/* description */}
-          <p className=' text-xl pt-3'>
+          <p className=' text-xl font-normal pt-3'>
            It is an internal portal designed specifically for Reliance employees, providing a comprehensive platform to manage HR-related activities such as attendance, payroll, leaves, and other employee self-service functions.
           </p>
         </div>
@@ -127,7 +127,7 @@ const Peoplefirst = ({ setCategory }) => {
               ],
             }}
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised: 266</div>
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised - 266</div>
 
         </motion.div>
       </div>
@@ -149,8 +149,8 @@ const Peoplefirst = ({ setCategory }) => {
           </div>
 
           {/* description */}
-          <div className='text-[16px] leading-6'>
-          We conducted User Acceptance Testing to ensure the app's functionality aligns with user requirements and expectations. Additionally, we retested raised issues to confirm that features were stable after minor changes or bug fixes.
+          <div className='text-[16px] font-normal leading-6'>
+          We conducted User Acceptance Testing to ensure the app&apos;s functionality aligns with user requirements and expectations. Additionally, we retested raised issues to confirm that the features were stable after minor changes or bug fixes.
           </div>
         </div>
         <div className='flex flex-col w-[400px] h-[200px] gap-3 bg-white   p-4 rounded-xl'>
@@ -160,8 +160,8 @@ const Peoplefirst = ({ setCategory }) => {
           </div>
 
           {/* description */}
-          <div className='text-[16px] leading-6'>
-          As part of the testing process, we also evaluated a new feature called "Travel and Guest House," aimed at simplifying the process for booking travel and accommodation for employees.
+          <div className='text-[16px] font-normal leading-6'>
+          As part of the testing process, we evaluated a new feature called "Travel and Guest House", aimed at simplifying the process for booking travel and accommodation for employees.
  
           </div>
         </div>

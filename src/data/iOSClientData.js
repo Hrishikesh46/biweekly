@@ -56,7 +56,7 @@ export const IOSClientData = [
         CurrSeverity: [0, 2, 18, 4, 0],
       },
       {
-        name: 'Barnali1 C',
+        name: 'Barnali C',
         nickname: 'Bernoulli ',
         client: 'iOS',
         profileImg: barnali,

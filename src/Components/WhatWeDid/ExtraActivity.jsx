@@ -22,7 +22,7 @@ const ExtraActivity = ({ setCategory }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       exit={{ opacity: 0, y: 120 }}
-      className='absolute h-screen overscroll-contain   overflow-scroll '
+      className=' min-h-[100vh] '
     >
       <div
         className='absolute top-5 left-5  text-white hover:scale-105 duration-300 border border-white p-2 rounded-xl '
@@ -32,11 +32,11 @@ const ExtraActivity = ({ setCategory }) => {
       </div>
       {/* RnR */}
       <div className='text-center text-6xl font-bold text-white mt-8'>
-        Reward & Recognition
+        Rewards & Recognition
       </div>
 
       {/* activity data */}
-      <div className='w-[900px] mx-auto text-left text-lg  text-white mt-12'>
+      <div className='w-[900px] mx-auto text-left text-lg font-normal  text-white mt-12'>
         In our recent Rewards and Recognition event, our team created a video
         with the theme of "The Office," with contributions from every team
         member. We also showcased an entry sequence for the team introduction.
@@ -90,7 +90,7 @@ const ExtraActivity = ({ setCategory }) => {
         {/* title and description */}
         <div className='flex flex-col gap-6  items-center w-1/2 text-6xl pt-10'>
           <div className=''>Onam Celebration</div>
-          <div className=' text-lg'>
+          <div className=' text-lg font-normal'>
             The Onam event was a vibrant celebration held on 12th September 2024
             in Building 22. It featured a variety of performances that brought
             together tradition and modernity, creating an engaging and joyful
@@ -98,9 +98,9 @@ const ExtraActivity = ({ setCategory }) => {
             <p className='mt-6 text-2xl'>
               Event Highlights:{' '}
               <p className='mt-1 text-lg'>
-                King Maveli’s Ramp Walk: Alwis Shaji delivered a standout
+                King Maveli&apos;s Ramp Walk: Alwis Shaji delivered a standout
                 performance as King Maveli in a grand reenactment of the
-                legendary king's visit. - Group Western Dance: Ameya Deodhar,
+                legendary king's visit. Group Western Dance: Ameya Deodhar,
                 Aditi Bukkawar, and Yashi Pandey showcased a lively and
                 energetic group performance in modern dance styles.
               </p>

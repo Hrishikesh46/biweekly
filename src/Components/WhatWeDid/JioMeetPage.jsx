@@ -67,7 +67,7 @@ const JioMeetPage = ({ setCategory }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
       exit={{ opacity: 0, y: 80, transition: 0.4 }}
-      className='w-[1200px] mx-auto  h-screen overscroll-contain overflow-scroll relative '
+      className='w-[1200px] mx-auto  h-screen  overflow-scroll relative '
     >
       {/* Back button */}
       <div
@@ -97,7 +97,7 @@ const JioMeetPage = ({ setCategory }) => {
           </div>
 
           {/* description */}
-          <p className=' text-xl pt-4'>
+          <p className=' text-xl pt-4 font-normal'>
             JioMeet/JioEvents integrates HD video conferencing, content sharing, and chat
             collaboration, allowing users to schedule calls or host meetings
             from any device.
@@ -127,7 +127,7 @@ const JioMeetPage = ({ setCategory }) => {
             }}
           />
           <div className='text-white text-xl text-center pt-2'>
-            Total Issues Raised: 30
+            Total Issues Raised - 30
           </div>
         </motion.div>
       </div>
@@ -141,7 +141,7 @@ const JioMeetPage = ({ setCategory }) => {
         <img src={treeSvgJE} alt='' />
       </div>
 
-      <div className=' w-[1200px] grid grid-cols-4 mx-auto gap-8 mb-6 '>
+      <div className=' w-[1200px] grid grid-cols-4 mx-auto gap-8 mb-6 font-normal'>
         <div className='flex flex-col gap-3 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
           <div className='text-2xl font-bold'>
@@ -150,7 +150,7 @@ const JioMeetPage = ({ setCategory }) => {
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-            Key testing strategies include Backward Compatibility Testing (BCT)
+            Key testing strategies include Backward Compatibility Testing 
             checks if the current production version remains compatible with
             planned server changes before release.
           </div>
@@ -158,7 +158,7 @@ const JioMeetPage = ({ setCategory }) => {
         <div className='flex flex-col gap-3 bg-white h-auto  p-4 rounded-xl'>
           {/* title */}
           <div className='text-2xl font-bold'>
-            Post-Deployment Testing (PDT)
+            Post-Deployment Testing 
           </div>
 
           {/* description */}
@@ -174,7 +174,7 @@ const JioMeetPage = ({ setCategory }) => {
           {/* description */}
           <div className='text-[16px] leading-6'>
             PDS checks new features in production, ensuring functionality works
-            correctly and doesn’t disrupt existing features. Bugs are raised if
+            correctly and doesn&apos;t disrupt existing features. Bugs are raised if
             issues arise.
           </div>
         </div>
@@ -184,7 +184,7 @@ const JioMeetPage = ({ setCategory }) => {
 
           {/* description */}
           <div className='text-[16px] leading-6'>
-            To evaluates how JioMeet behaves under a specific, expected load.
+            To evaluate how JioMeet behaves under a specific, expected load.
             The main goal is to check if system can handle the anticipated
             amount of work and find potential points of failure
           </div>

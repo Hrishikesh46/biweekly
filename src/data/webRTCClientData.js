@@ -62,7 +62,7 @@ export const WebClientData = [
         profileImg: aniruddh,
         prevScore: 'NA',
         currScore: '21',
-        courses: ['DevOps with AWS', 'Learning REST APIs'],
+        courses: ['DevOps with AWS', 'Learning REST API'],
         rank: 5,
         CurrSeverity: [0, 0, 3, 2, 0],
       },

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import namoImg from '../../assets/namo.png';
@@ -13,9 +13,10 @@ import ExtraActivity from './ExtraActivity';
 
 const CategoryDetail = () => {
   const [category, setCategory] = useState('');
+  const parentRef = useRef(null)
   console.log(category);
   return (
-    <div id='taskPerformed' className='h-[100vh]  '>
+    <div id='taskPerformed' className='min-h-[100vh]   relative '>
       {/* Heading */}
       {/* Category section */}
       <AnimatePresence mode='wait'>
@@ -128,7 +129,7 @@ const CategoryDetail = () => {
       <AnimatePresence mode='wait'>
         {category === 'jiomeet' && <JioMeetPage setCategory={setCategory} />}
 
-        {category === 'namo' && <Namo setCategory={setCategory} />}
+        {category === 'namo' && <Namo setCategory={setCategory} parentRef={parentRef} />}
 
         {category === 'peoplefirst' && (
           <Peoplefirst setCategory={setCategory} />

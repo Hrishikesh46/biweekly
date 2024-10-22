@@ -166,7 +166,7 @@ const TeamPage = ({ category, setCategory }) => {
               }}
               exit={{ y: 180, opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className='px-24 py-24 w-full  grid grid-cols-3    gap-4'
+              className='px-24 pb-24 pt-12 w-full  grid grid-cols-3    gap-4'
             >
               {category[0].clientMembers.map((member) => {
                 if (member.rank === 1) {
