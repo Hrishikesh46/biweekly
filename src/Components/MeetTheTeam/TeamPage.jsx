@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import userProfile from '../../assets/myImage.png';
 import { motion } from 'framer-motion';
 import { Doughnut } from 'react-chartjs-2';
+import ChartDataLabels from 'chartjs-plugin-datalabels'
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -23,8 +25,27 @@ ChartJS.register(
   ArcElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  ChartDataLabels
 );
+
+const drawCenterTextPlugin = {   
+  id: 'drawCenterTextPlugin',   
+  beforeDraw: function (chart) {     
+    const ctx = chart.ctx;     
+    const width = chart.width;     
+    const height = chart.height;     
+    const centerX = width / 2;     
+    const centerY = height / 2;     // Calculate total
+const total = chart.config.data.datasets[0].data.reduce((sum, value) => sum + value, 0);     
+ctx.save();     
+ctx.font = 'bold 30px Arial';     
+ctx.textAlign = 'center'; 
+ctx.textBaseline = 'middle'; 
+ctx.fillStyle = '#fff'; 
+ctx.fillText(total, centerX, centerY); 
+ctx.restore(); 
+} };
 
 //to change font size of labels
 const options = {
@@ -39,7 +60,19 @@ const options = {
         },
       },
     },
+    tooltip:{
+      enabled:true,
+    },
+   
+    datalabels:{
+      color: '#000',
+      font: {
+        size: 12
+      } ,
+      formatter:(value) =>value
+    },
   },
+  
   scales: {
     x: {
       display: false,
@@ -116,6 +149,7 @@ const TeamPage = ({ category, setCategory }) => {
               </div>
               <motion.div className='w-[350px]   h-[350px]  rounded-lg  '>
                 <Doughnut
+                plugins={[drawCenterTextPlugin]}
                   options={options}
                   data={{
                     labels: ['Blocker', 'Critical', 'Major', 'Normal', 'Minor'],

@@ -60,7 +60,7 @@ export const WindowsClientData = [
         CurrSeverity: [0, 6, 4, 5, 0],
       },
       {
-        name: 'khushi Bohre',
+        name: 'Khushi Bohre',
         nickname: 'Khushi ',
         client: 'Windows',
         profileImg: khushi,

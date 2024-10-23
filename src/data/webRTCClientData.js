@@ -29,7 +29,7 @@ export const WebClientData = [
         profileImg: soumya,
         prevScore: '140',
         currScore: '138',
-        courses: ['Crash course on Python'],
+        courses: ['Principles of UI/UX design'],
         rank: 2,
         CurrSeverity: [1, 2, 10, 20, 2],
       },

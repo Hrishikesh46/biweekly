@@ -10,6 +10,7 @@ import tickIcon from '../../assets/AccomplishmentIcon.png';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { motion } from 'framer-motion';
 import { Bar, Doughnut } from 'react-chartjs-2';
+import ChartDataLabels from 'chartjs-plugin-datalabels'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -21,6 +22,7 @@ import {
   Legend,
 } from 'chart.js';
 
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -28,8 +30,28 @@ ChartJS.register(
   ArcElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  ChartDataLabels
 );
+
+const drawCenterTextPlugin = {   
+  id: 'drawCenterTextPlugin',   
+  beforeDraw: function (chart) {     
+    const ctx = chart.ctx;     
+    const width = chart.width;     
+    const height = chart.height;     
+    const centerX = width / 2;     
+    const centerY = height / 2;     // Calculate total
+const total = chart.config.data.datasets[0].data.reduce((sum, value) => sum + value, 0);     
+ctx.save();     
+ctx.font = 'bold 30px Arial';     
+ctx.textAlign = 'center'; 
+ctx.textBaseline = 'middle'; 
+ctx.fillStyle = '#fff'; 
+ctx.fillText(total, centerX, centerY); 
+ctx.restore(); 
+} };
+ 
 
 //to change font size of labels
 const optionsDoughnut = {
@@ -44,6 +66,19 @@ const optionsDoughnut = {
         },
       },
     },
+    tooltip:{
+      enabled:true,
+    },
+   
+    datalabels:{
+      color: '#000',
+     
+      font: {
+        size: 12
+      } ,
+      formatter:(value) =>value
+    },
+    
   },
   scales: {
     x: {
@@ -96,6 +131,15 @@ const optionsBar = {
         },
       },
     },
+    datalabels:{
+      color: '#fff',
+      align:'top',
+      anchor:'end',
+      font: {
+        size: 12
+      } ,
+      formatter:(value) =>value
+    },
   },
   scales: {
     x: {
@@ -139,7 +183,7 @@ const Namo = ({ setCategory, parentRef }) => {
         {/* Pie chart */}
         <motion.div className='w-[300px]   h-[300px]  rounded-lg  '>
           <Doughnut
-            options={optionsDoughnut}
+            options={optionsDoughnut} plugins={[drawCenterTextPlugin]}
             data={{
               labels: ['Blocker', 'Critical', 'Major', 'Normal', 'Minor'],
 
@@ -318,7 +362,7 @@ const Namo = ({ setCategory, parentRef }) => {
       </div>
 
       {/* Founder's Day Quiz */}
-      <div className='flex justify-between items-center  text-white gap-8  w-[1000px] mx-auto mt-8 mb-6'>
+      <div className='flex justify-between items-center  text-white gap-8  w-[1000px] mx-auto mt-8 '>
         {/* title, logo  */}
         <div className='flex flex-col items-center justify-center gap-3 w-[500px] '>
           <div className='flex items-center justify-center gap-4 bg-[#4B62E1] pl-8 p-2 h-auto   rounded-l-full '>
@@ -383,11 +427,52 @@ const Namo = ({ setCategory, parentRef }) => {
       </div>
 
       {/* Sweep Module */}
-      <div className='flex justify-between items-center  text-white gap-12  w-[1000px] mx-auto py-5'>
+      <div className='flex justify-between items-center  text-white gap-12  w-[1000px] mx-auto '>
         {/* chart */}
-        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-5 '>
+        <motion.div className='w-[600px] h-[300px]  rounded-lg pt-8'>
           <Bar
-            options={optionsBar}
+            options={{
+              responsive: true,
+              plugins: {
+                legend: {
+                  display: false,
+                  labels: {
+                    color: 'White', // Change the font color of the legend labels
+                    font: {
+                      size: 16,
+                    },
+                  },
+                },
+                datalabels:{
+                  color: '#fff',
+                  align:'top',
+                  anchor:'end',
+                  font: {
+                    size: 12
+                  } ,
+                  formatter:(value) =>value
+                },
+              },
+              scales: {
+                x: {
+                  ticks: {
+                    color: 'White', // Change the font color of the x-axis labels
+                    font: {
+                      size: 14,
+                    }, 
+                  },
+                },
+                y: {
+                  ticks: {
+                    stepSize:5,
+                    color: 'White', // Change the font color of the y-axis labels
+                    font: {
+                      size: 14,
+                    },
+                  },
+                },
+              },
+            }}
             data={{
               labels: ['Blocker', 'Critical', 'Major', 'Normal', 'Minor'],
 

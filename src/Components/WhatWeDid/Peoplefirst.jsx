@@ -108,7 +108,49 @@ const Peoplefirst = ({ setCategory }) => {
           className='w-[500px] h-[250px]  rounded-lg mt-4 mb-8'
         >
           <Bar
-            options={options}
+             options={{
+              responsive: true,
+              plugins: {
+                legend: {
+                  display: false,
+                  labels: {
+                    color: 'White', // Change the font color of the legend labels
+                    font: {
+                      size: 16,
+                    },
+                  },
+                },
+                datalabels:{
+                  color: '#fff',
+                  align:'top',
+                  anchor:'end',
+                  font: {
+                    size: 12
+                  } ,
+                  formatter:(value) =>value
+                },
+              },
+              scales: {
+                x: {
+                  ticks: {
+                    color: 'White', // Change the font color of the x-axis labels
+                    font: {
+                      size: 14,
+                    }, 
+                  },
+                },
+                y: {
+                  ticks: {
+                    
+                    color: 'White', // Change the font color of the y-axis labels
+                    font: {
+                      size: 14,
+                    },
+                  },
+                },
+              },
+            }}
+            
             data={{
               labels: ['Blocker', 'Critical', 'Major', 'Normal', 'Minor'],
               datasets: [

@@ -100,13 +100,13 @@ const MemberDetail = ({ user, setUser }) => {
             <div className='flex gap-4 text-xl'>
               {/* prev score */}
               <div className='flex flex-col justify-center items-center'>
-                <div className=''>Previous Score</div>
+                <div className='font-normal'>Previous Score</div>
                 <div className='text-3xl'>{user.prevScore}</div>
               </div>
 
               {/* current score */}
               <div className='flex flex-col justify-center items-center '>
-                <div className=''>Current Score</div>
+                <div className='font-normal'>Current Score</div>
                 <div className='text-3xl'>{user.currScore}</div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const MemberDetail = ({ user, setUser }) => {
           {/* courses section */}
           <div className='flex flex-col w-[312px]  '>
             <div className='text-3xl mb-3 '>Courses</div>
-            <ul className='text-xl gap-3 '>
+            <ul className='text-xl gap-3 font-normal'>
               {user.courses.map((course) => {
                 return <li>- {course}</li>;
               })}
@@ -127,7 +127,49 @@ const MemberDetail = ({ user, setUser }) => {
           {/* Graph */}
           <motion.div className='w-[400px] h-[400px]  rounded-lg pt-1 '>
             <Bar
-              options={optionsBar}
+               options={{
+                responsive: true,
+                plugins: {
+                  legend: {
+                    display: false,
+                    labels: {
+                      color: 'White', // Change the font color of the legend labels
+                      font: {
+                        size: 16,
+                      },
+                    },
+                  },
+                  datalabels:{
+                    color: '#fff',
+                    align:'top',
+                    anchor:'end',
+                    font: {
+                      size: 12
+                    } ,
+                    formatter:(value) =>value
+                  },
+                },
+                scales: {
+                  x: {
+                    ticks: {
+                      color: 'White', // Change the font color of the x-axis labels
+                      font: {
+                        size: 14,
+                      }, 
+                    },
+                  },
+                  y: {
+                    ticks: {
+                      stepSize:5,
+                      color: 'White', // Change the font color of the y-axis labels
+                      font: {
+                        size: 14,
+                      },
+                    },
+                  },
+                },
+              }}
+              
               data={{
                 labels: ['Blocker', 'Critical', 'Major', 'Normal', 'Minor'],
 

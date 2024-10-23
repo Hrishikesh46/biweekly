@@ -18,7 +18,7 @@ const ExtraActivity = ({ setCategory }) => {
   return (
     <motion.div
       key='extraactivity'
-      initial={{ opacity: 0, y: 120 }}
+      initial={{ opacity: 0, y: 60 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       exit={{ opacity: 0, y: 120 }}
