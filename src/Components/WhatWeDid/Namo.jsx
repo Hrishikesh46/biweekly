@@ -74,7 +74,7 @@ const optionsDoughnut = {
       color: '#000',
      
       font: {
-        size: 12
+        size: 14
       } ,
       formatter:(value) =>value
     },
@@ -136,7 +136,7 @@ const optionsBar = {
       align:'top',
       anchor:'end',
       font: {
-        size: 12
+        size: 14
       } ,
       formatter:(value) =>value
     },
@@ -224,7 +224,7 @@ const Namo = ({ setCategory, parentRef }) => {
 
           {/* description */}
           <div className='text-lg  font-normal'>
-            A User-Friendly, official application for our Prime Minister
+            Official application for our Prime Minister
             Narendra Modi. Users can engage with his activities, speeches, and
             government initiatives.
           </div>
@@ -322,7 +322,7 @@ const Namo = ({ setCategory, parentRef }) => {
             }}
             
           />
-          <div className="text-white text-xl text-center pt-2">Total Issues Raised - 296</div>
+          <div className="text-white text-xl text-center pt-2">Total Issues Raised - 301</div>
 
         </motion.div>
         {/* title, logo  */}
@@ -377,8 +377,8 @@ const Namo = ({ setCategory, parentRef }) => {
 
               {/* description */}
               <div className='text-sm font-normal'>
-                This module was created to honour Pandit DeanDayal Upadhyaya the
-                forerunner of Bharatiya Janata Party on the occasion of his
+                This module was created to honour Pandit Deen Dayal Upadhyay a
+                founding member of Bharatiya Janata Party on the occasion of his
                 Birthday.
               </div>
             </div>

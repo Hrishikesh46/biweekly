@@ -67,7 +67,7 @@ const options = {
     datalabels:{
       color: '#000',
       font: {
-        size: 12
+        size: 16
       } ,
       formatter:(value) =>value
     },
@@ -251,7 +251,7 @@ const TeamPage = ({ category, setCategory }) => {
                           </div>
                         </div>
                         <div className={`pt-1 font-semibold  `}style={{color:color}}>
-                          Curr score{' '}
+                          Curr Score{' '}
                           <div
                             className={`text-center font-semibold `}style={{color:color}}
                           >

@@ -124,7 +124,7 @@ const JioMeetPage = ({ setCategory }) => {
                   align:'top',
                   anchor:'end',
                   font: {
-                    size: 12
+                    size: 14
                   } ,
                   formatter:(value) =>value
                 },
