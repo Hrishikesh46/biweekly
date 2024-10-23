@@ -18,10 +18,10 @@ export const AndroidClientData = [
         client: 'Android',
         profileImg: nikhil,
         prevScore: '204',
-        currScore: '172',
+        currScore: '199',
         courses: ['Introduction to React'],
         rank: 1,
-        CurrSeverity: [1, 6, 14, 13, 4],
+        CurrSeverity: [1, 7, 15, 18, 4],
       },
 
       {
@@ -41,13 +41,13 @@ export const AndroidClientData = [
         client: 'Android',
         profileImg: sanika,
         prevScore: '104',
-        currScore: '129',
+        currScore: '152',
         courses: [
           'Introduction to Cloud computing',
           'Database Management with SQL',
         ],
         rank: 3,
-        CurrSeverity: [1, 5, 11, 9, 0],
+        CurrSeverity: [1, 5, 15, 9, 0],
       },
       {
         name: 'Sahara Mali',
@@ -55,9 +55,9 @@ export const AndroidClientData = [
         client: 'Android',
         profileImg: sahara,
         prevScore: '53',
-        currScore: '121',
+        currScore: '137',
         courses: ['Programming with JavaScript'],
-        CurrSeverity: [0, 4, 15, 5, 2],
+        CurrSeverity: [0, 5, 16, 5, 2],
         rank: 4,
       },
       {
@@ -66,10 +66,10 @@ export const AndroidClientData = [
         client: 'Android',
         profileImg: riya,
         prevScore: '11',
-        currScore: '83',
+        currScore: '91',
         courses: ['Data Structures and Algorithms', 'Linux Cloud and DevOps'],
         rank: 5,
-        CurrSeverity: [1, 2, 9, 4, 0],
+        CurrSeverity: [1, 2, 10, 5, 0],
       },
       {
         name: 'Divyanshi S',
@@ -77,14 +77,14 @@ export const AndroidClientData = [
         client: 'Android',
         profileImg: divyanshi,
         prevScore: 'NA',
-        currScore: '70',
+        currScore: '80',
         courses: [
           'Introduction to DevOps',
           'DevOPS with AWS',
           'Introduction to Backend Development',
         ],
         rank: 6,
-        CurrSeverity: [0, 3, 5, 7, 0],
+        CurrSeverity: [0, 3, 7, 7, 0],
       },
 
       {
@@ -93,15 +93,15 @@ export const AndroidClientData = [
         client: 'Android',
         profileImg: yashi,
         prevScore: 'NA',
-        currScore: '45',
+        currScore: '53',
         courses: ['Product Management: Initial Product Strategy and Plan'],
         rank: 7,
 
-        CurrSeverity: [0, 2, 5, 3, 0],
+        CurrSeverity: [0, 2, 5, 4, 0],
       },
     ],
 
-    currConsolidatedCount: [5, 29, 71, 47, 7],
-    issuesRaised: 159
+    currConsolidatedCount: [5, 31, 80, 54, 7],
+    issuesRaised: 177
   },
 ];

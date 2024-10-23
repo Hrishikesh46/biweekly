@@ -98,7 +98,7 @@ const JioMeetPage = ({ setCategory }) => {
 
           {/* description */}
           <p className=' text-xl pt-4 font-normal'>
-            JioMeet/JioEvents integrates HD video conferencing, content sharing, and chat
+            JioMeet & JioEvents integrates HD video conferencing, content sharing, and chat
             collaboration, allowing users to schedule calls or host meetings
             from any device.
           </p>
