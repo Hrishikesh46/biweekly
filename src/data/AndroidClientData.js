@@ -6,7 +6,7 @@ import riya from "../assets/TeamMembers/Riya.webp";
 import divyanshi from "../assets/TeamMembers/Divyanshi.webp";
 import yashi from "../assets/TeamMembers/Yashi.webp";
 import nikhil from "../assets/TeamMembers/Nikhil.webp";
-import Pooja from "../assets/TeamMembers/Pooja.jpeg";
+import Pooja from "../assets/NewCategoryAsset/pooja.webp";
 
 export const AndroidClientData = [
   {

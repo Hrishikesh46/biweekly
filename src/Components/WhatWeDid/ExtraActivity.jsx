@@ -5,6 +5,7 @@ import xmas from "../../assets/NewCategoryAsset/xmasnew.webp";
 import stars from "../../assets/NewCategoryAsset/stars2.png";
 import rsports from "../../assets/NewCategoryAsset/rsportsnew.webp";
 import familyday from "../../assets/NewCategoryAsset/famday.webp";
+import trophy from "../../assets/NewCategoryAsset/trophy.svg";
 
 const ExtraActivity = ({ setCategory }) => {
   // const pageRef = useRef(null);
@@ -69,11 +70,16 @@ const ExtraActivity = ({ setCategory }) => {
       </div>
 
       {/* R-sports */}
-      <div className="w-[1200px]  h-auto mx-auto flex   text-white mt-20 mb-6">
+      <div className="w-[1200px]  h-auto mx-auto flex relative  text-white mt-20 mb-6">
         {/* title and description */}
-        <div className="flex flex-col gap-6  items-center w-1/2 text-6xl pt-20">
-          <div className="self-start text-6xl">R-Sports </div>
-          <div className=" text-2xl font-normal">
+        <div className="flex flex-col gap-6  items-center w-1/2 text-6xl pt-36">
+          <div className="self-start text-6xl">Annual R-Sports </div>
+          <div className=" text-2xl font-normal  ">
+            <img
+              src={trophy}
+              alt=""
+              className="absolute w-[82px] h-[82px] right-[56%] top-[14%] "
+            />
             Our team members participated in Football and Table Tennis
             tournament of R-Sports. We won the <strong>Champions Trophy</strong>{" "}
             for Football.

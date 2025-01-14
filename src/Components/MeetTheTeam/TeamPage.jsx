@@ -125,6 +125,14 @@ const options = {
   plugins: {
     legend: {
       position: "bottom",
+      labels: {
+        padding: 20, // Increases the space between legend items
+        font: {
+          size: 13,
+          weight: "bold",
+        },
+        color: "white",
+      },
     },
     tooltip: {
       enabled: false,
@@ -168,20 +176,20 @@ const TeamPage = ({ category, setCategory }) => {
     labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
     datasets: [
       {
-        label: "Previous Issue Count",
-        data: category[0].prevConsolidatedCount || [0, 0, 0, 0, 0], // Fallback to avoid undefined
-        borderColor: "rgba(75, 192, 192, 1)",
-        backgroundColor: "rgba(75, 192, 192, 0.2)",
-        tension: 0, // Sharp lines
-        fill: false, // No fill
-      },
-      {
         label: "Current Issue Count",
         data: category[0].currConsolidatedCount, // Replace with actual data or leave empty if not available
         borderColor: "rgba(153, 102, 255, 1)",
         backgroundColor: "rgba(153, 102, 255, 0.2)",
         tension: 0, // Sharp lines
         fill: true, // Filled line
+      },
+      {
+        label: "Previous Issue Count",
+        data: category[0].prevConsolidatedCount || [0, 0, 0, 0, 0], // Fallback to avoid undefined
+        borderColor: "rgba(75, 192, 192, 1)",
+        backgroundColor: "rgba(75, 192, 192, 0.2)",
+        tension: 0, // Sharp lines
+        fill: false, // No fill
       },
     ],
   };
@@ -213,11 +221,11 @@ const TeamPage = ({ category, setCategory }) => {
         {/* Team name and Data graph */}
         {userDetail === "" && (
           <>
-            <div className="flex gap-24 justify-center items-center  pt-8 relative">
+            <div className="flex gap-24 justify-center items-center  pt-12 relative">
               <div className="flex flex-col gap-2 text-7xl font-bold  ">
-                <div className="">JioMeet</div>
+                <div className="">Team</div>
                 <div className="">{category[0]?.client}</div>
-                <div className="text-xl pt-3">
+                <div className="text-2xl pt-3">
                   Total Issues Raised : {category[0]?.issuesRaised}
                 </div>
               </div>
