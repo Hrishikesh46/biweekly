@@ -17,12 +17,12 @@ export const MacOSClientData = [
         client: "MacOS",
         profileImg: ameya,
         prevScore: "147",
-        currScore: "141",
+        currScore: "151",
         courses: ["Foundations of Project Management"],
         extraActivity: ["Sang in Christmas event", "Voice collection task"],
         rank: 1,
         prevSeverity: [1, 7, 10, 10, 0],
-        currSeverity: [2, 8, 8, 5, 2],
+        currSeverity: [3, 8, 8, 5, 2],
       },
       {
         name: "Nikita Bharati",
@@ -66,7 +66,7 @@ export const MacOSClientData = [
     ],
 
     prevConsolidatedCount: [3, 14, 30, 30, 3],
-    currConsolidatedCount: [2, 18, 27, 22, 4],
-    issuesRaised: 73,
+    currConsolidatedCount: [3, 18, 27, 22, 4],
+    issuesRaised: 74,
   },
 ];

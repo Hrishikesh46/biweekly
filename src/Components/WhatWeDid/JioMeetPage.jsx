@@ -67,7 +67,7 @@ const data = {
   datasets: [
     {
       label: "Current Issue Count",
-      data: [0, 1, 11, 13, 8],
+      data: [0, 1, 13, 14, 8],
       borderColor: "rgba(0, 191, 255, 1)",
       backgroundColor: "rgba(0, 191, 255, 0.2)",
       tension: false,
@@ -181,7 +181,7 @@ const JioMeetPage = ({ setCategory }) => {
       <motion.div className="w-[800px] h-[400px] mt-12 mx-auto    rounded-lg ">
         <Line className="h-[400px]" data={data} options={options} />
         <div className="text-white text-3xl text-center pt-5">
-          Total Issues Raised : 33
+          Total Issues Raised : 36
         </div>
       </motion.div>
 
