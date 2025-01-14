@@ -1,74 +1,72 @@
-import webLogo from '../assets/webrtc.png';
+import webLogo from "../assets/NewCategoryAsset/webrtcnew1.png";
 
-import kunal from '../assets/TeamMembers/Kunal.webp';
-import soumya from '../assets/TeamMembers/Soumya.webp';
-import alwis from '../assets/TeamMembers/Alwis.webp';
-import ayush from '../assets/TeamMembers/Ayush.webp';
-import aniruddh from '../assets/TeamMembers/Aniruddh.webp';
+import kunal from "../assets/TeamMembers/Kunal.webp";
+import soumya from "../assets/TeamMembers/Soumya.webp";
+import alwis from "../assets/TeamMembers/Alwis.webp";
+import ayush from "../assets/TeamMembers/Ayush.webp";
+import aniruddh from "../assets/TeamMembers/Aniruddh.webp";
 
 export const WebClientData = [
   {
-    client: 'WebRTC',
+    client: "WebRTC",
     clientLogo: webLogo,
     clientMembers: [
       {
-        name: 'Kunal Jaiswal',
-        nickname: 'Kunnu ',
-        client: 'WebRTC',
-        profileImg: kunal,
-        prevScore: '83',
-        currScore: '223',
-        courses: ['Start the UX Design Process'],
-        rank: 1,
-        CurrSeverity: [3, 14, 12, 7, 0],
-      },
-      {
-        name: ' Soumya Sinha',
-        nickname: 'Somu ',
-        client: 'WebRTC',
-        profileImg: soumya,
-        prevScore: '140',
-        currScore: '143',
-        courses: ['Principles of UI/UX design'],
-        rank: 2,
-        CurrSeverity: [1, 2, 11, 20, 2],
-      },
-      {
-        name: 'Alwis Shaji',
-        nickname: 'Dabeli ',
-        client: 'WebRTC',
+        name: "Alwis Shaji",
+        nickname: "Dabeli ",
+        client: "WebRTC",
         profileImg: alwis,
-        prevScore: '53',
-        currScore: '82',
-        courses: ['Java Spring Boot'],
+        prevScore: "82",
+        currScore: "155",
+        courses: ["Software Development Life cycle", "Java Spring Boot"],
+        extraActivity: ["Green diwali event", "Voice collection task"],
+        rank: 1,
+        prevSeverity: [1, 3, 5, 7, 2],
+        currSeverity: [1, 4, 16, 11, 0],
+      },
+      {
+        name: "Soumya Sinha",
+        nickname: "Somu ",
+        client: "WebRTC",
+        profileImg: soumya,
+        prevScore: "143",
+        currScore: "141",
+        courses: ["Meta Frontend Developer Course"],
+        extraActivity: ["Christmas decoration"],
+        rank: 2,
+        prevSeverity: [1, 2, 11, 20, 2],
+        currSeverity: [1, 5, 11, 12, 0],
+      },
+
+      {
+        name: "Kunal Jaiswal",
+        nickname: "Kunnu ",
+        client: "WebRTC",
+        profileImg: kunal,
+        prevScore: "223",
+        currScore: "124",
+        courses: ["Figma: Design systems", "Figma Master class by Mizko"],
+        extraActivity: ["Christmas decoration"],
         rank: 3,
-        CurrSeverity: [1, 3, 5, 7, 2],
+        prevSeverity: [3, 14, 12, 7, 0],
+        currSeverity: [4, 6, 6, 2, 0],
       },
       {
-        name: 'Ayush Pandey',
-        nickname: 'OG Pandey ',
-        client: 'WebRTC',
+        name: "Ayush Pandey",
+        nickname: "OG Pandey ",
+        client: "WebRTC",
         profileImg: ayush,
-        prevScore: '35',
-        currScore: '60',
-        courses: ['Web development'],
+        prevScore: "60",
+        currScore: "74",
+        courses: ["Web development"],
+        extraActivity: ["Christmas decoration"],
         rank: 4,
-        CurrSeverity: [0, 4, 4, 2, 2],
-      },
-      {
-        name: 'Aniruddh Ghewade',
-        nickname: 'Anni  ',
-        client: 'WebRTC',
-        profileImg: aniruddh,
-        prevScore: 'NA',
-        currScore: '21',
-        courses: ['DevOps with AWS', 'Learning REST API'],
-        rank: 5,
-        CurrSeverity: [0, 0, 3, 2, 0],
+        prevSeverity: [0, 4, 4, 2, 2],
+        currSeverity: [0, 1, 8, 8, 2],
       },
     ],
-    currConsolidatedCount: [4, 22, 33, 38, 6],
-    issuesRaised: 103,
-
+    prevConsolidatedCount: [4, 22, 33, 38, 6],
+    currConsolidatedCount: [6, 16, 41, 33, 2],
+    issuesRaised: 98,
   },
 ];

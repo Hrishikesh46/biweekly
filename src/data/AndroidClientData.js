@@ -1,107 +1,144 @@
-import androidLogo from '../assets/android.png';
-import meeti from '../assets/TeamMembers/Meeti.webp';
-import sanika from '../assets/TeamMembers/Sanika.webp';
-import sahara from '../assets/TeamMembers/Sahara.webp';
-import riya from '../assets/TeamMembers/Riya.webp';
-import divyanshi from '../assets/TeamMembers/Divyanshi.webp';
-import yashi from '../assets/TeamMembers/Yashi.webp';
-import nikhil from '../assets/TeamMembers/Nikhil.webp';
+import androidLogo from "../assets/android.png";
+import meeti from "../assets/TeamMembers/Meeti.webp";
+import sanika from "../assets/TeamMembers/Sanika.webp";
+import sahara from "../assets/TeamMembers/Sahara.webp";
+import riya from "../assets/TeamMembers/Riya.webp";
+import divyanshi from "../assets/TeamMembers/Divyanshi.webp";
+import yashi from "../assets/TeamMembers/Yashi.webp";
+import nikhil from "../assets/TeamMembers/Nikhil.webp";
+import Pooja from "../assets/TeamMembers/Pooja.jpeg";
 
 export const AndroidClientData = [
   {
-    client: 'Android',
+    client: "Android",
     clientLogo: androidLogo,
     clientMembers: [
       {
-        name: 'Nikhil Jaiswal',
-        nickname: 'Jaiswal Ji',
-        client: 'Android',
+        name: "Nikhil Jaiswal",
+        nickname: "Jaiswal Ji",
+        client: "Android",
         profileImg: nikhil,
-        prevScore: '204',
-        currScore: '199',
-        courses: ['Introduction to React'],
+        prevScore: "199",
+        currScore: "216",
+        courses: ["React Basics", "Meta Backend Developer"],
+        extraActivity: [
+          "Voice Collection task",
+          "Reliance family day volunteering",
+        ],
         rank: 1,
-        CurrSeverity: [1, 7, 15, 18, 4],
+        prevSeverity: [1, 7, 15, 18, 4],
+        currSeverity: [1, 8, 17, 19, 0],
       },
-
       {
-        name: 'Meeti Shah',
-        nickname: 'Mighty Shah',
-        client: 'Android',
-        profileImg: meeti,
-        prevScore: '68',
-        currScore: '155',
-        courses: ['Programming with JavaScript'],
+        name: "Divyanshi S",
+        nickname: "Divya",
+        client: "Android",
+        profileImg: divyanshi,
+        prevScore: "80",
+        currScore: "161",
+        courses: ["Spring Framework", "Introduction to spring boot"],
+        extraActivity: [
+          "Reliance Family day volunteering",
+          "Helped in Analytics Dashboard",
+        ],
         rank: 2,
-        CurrSeverity: [2, 7, 12, 6, 1],
+        prevSeverity: [0, 3, 7, 7, 0],
+        currSeverity: [0, 5, 17, 11, 0],
       },
       {
-        name: 'Sanika Mhasvekar',
-        nickname: 'Sanity',
-        client: 'Android',
-        profileImg: sanika,
-        prevScore: '104',
-        currScore: '152',
+        name: "Yashi Pandey",
+        nickname: "Pandey Ji",
+        client: "Android",
+        profileImg: yashi,
+        prevScore: "53",
+        currScore: "160",
         courses: [
-          'Introduction to Cloud computing',
-          'Database Management with SQL',
+          "Product Management: Initial Product Strategy and Plan",
+          "Introduction to Agile and Scrum",
         ],
         rank: 3,
-        CurrSeverity: [1, 5, 15, 9, 0],
+        extraActivity: ["Danced in Christmas event", "Voice collection task"],
+        prevSeverity: [0, 2, 5, 4, 0],
+        currSeverity: [1, 7, 14, 8, 0],
       },
+
       {
-        name: 'Sahara Mali',
-        nickname: 'Sharara',
-        client: 'Android',
-        profileImg: sahara,
-        prevScore: '53',
-        currScore: '137',
-        courses: ['Programming with JavaScript'],
-        CurrSeverity: [0, 5, 16, 5, 2],
-        rank: 4,
-      },
-      {
-        name: 'Riya Kesaria',
-        nickname: 'Jhansi Ki Rani',
-        client: 'Android',
-        profileImg: riya,
-        prevScore: '11',
-        currScore: '91',
-        courses: ['Data Structures and Algorithms', 'Linux Cloud and DevOps'],
-        rank: 5,
-        CurrSeverity: [1, 2, 10, 5, 0],
-      },
-      {
-        name: 'Divyanshi S',
-        nickname: 'Divya',
-        client: 'Android',
-        profileImg: divyanshi,
-        prevScore: 'NA',
-        currScore: '80',
-        courses: [
-          'Introduction to DevOps',
-          'DevOPS with AWS',
-          'Introduction to Backend Development',
+        name: "Meeti Shah",
+        nickname: "Mighty Shah",
+        client: "Android",
+        profileImg: meeti,
+        prevScore: "155",
+        currScore: "131",
+        courses: ["Digital Product Management", "Software Product Management"],
+        extraActivity: [
+          "Annual R-Sports (Table Tennis)",
+          "Biweekly Figma UI Design",
         ],
+        rank: 4,
+        prevSeverity: [2, 7, 12, 6, 1],
+        currSeverity: [0, 10, 9, 2, 0],
+      },
+      {
+        name: "Sahara Mali",
+        nickname: "Sharara",
+        client: "Android",
+        profileImg: sahara,
+        prevScore: "137",
+        currScore: "130",
+        courses: ["Introduction to spring boot"],
+        extraActivity: ["Helped in Analytics Dashboard"],
+        prevSeverity: [0, 5, 16, 5, 2],
+        currSeverity: [1, 3, 13, 10, 1],
+        rank: 5,
+      },
+      {
+        name: "Sanika Mhasvekar",
+        nickname: "Sanity",
+        client: "Android",
+        profileImg: sanika,
+        prevScore: "152",
+        currScore: "83",
+        courses: ["AWS Fundamentals"],
+        extraActivity: ["Christmas Decoration"],
         rank: 6,
-        CurrSeverity: [0, 3, 7, 7, 0],
+
+        prevSeverity: [1, 5, 15, 9, 0],
+        currSeverity: [0, 4, 9, 2, 0],
       },
 
       {
-        name: 'Yashi Pandey',
-        nickname: 'Pandey Ji',
-        client: 'Android',
-        profileImg: yashi,
-        prevScore: 'NA',
-        currScore: '53',
-        courses: ['Product Management: Initial Product Strategy and Plan'],
+        name: "Riya Kesaria",
+        nickname: "Jhansi Ki Rani",
+        client: "Android",
+        profileImg: riya,
+        prevScore: "91",
+        currScore: "59",
+        courses: ["Data structure and algorithm", "Figma essentials"],
+        extraActivity: [
+          "Reliance family day volunteering",
+          "Voice collection task",
+        ],
         rank: 7,
-
-        CurrSeverity: [0, 2, 5, 4, 0],
+        prevSeverity: [1, 2, 10, 5, 0],
+        currSeverity: [0, 2, 5, 6, 0],
+      },
+      {
+        name: "Pooja Kadam",
+        nickname: "Pooja Ma'am",
+        client: "Android",
+        profileImg: Pooja,
+        prevScore: "NA",
+        currScore: "10",
+        courses: ["Introduction to SAP MM"],
+        extraActivity: [],
+        rank: 8,
+        prevSeverity: [0, 0, 0, 0, 0],
+        currSeverity: [1, 0, 0, 0, 0],
       },
     ],
 
-    currConsolidatedCount: [5, 31, 80, 54, 7],
-    issuesRaised: 177
+    prevConsolidatedCount: [5, 31, 80, 54, 7],
+    currConsolidatedCount: [4, 39, 84, 58, 1],
+    issuesRaised: 186,
   },
 ];
