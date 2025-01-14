@@ -2,7 +2,7 @@
 import meeti from "../../assets/TeamMembers/Meeti.webp";
 import hrishikesh from "../../assets/TeamMembers/Nakli.webp";
 import sahil from "../../assets/TeamMembers/Sahil.webp";
-import contri from "../../assets/NewCategoryAsset/con.webp";
+import contri from "../../assets/NewCategoryAsset/contrifinal.webp";
 
 // bg-gradient-to-r from-red-900 from-25% via-pink-300 via-75% to-slate-700 to-100%
 

@@ -66,6 +66,14 @@ const data = {
   labels: ["Blocker", "Critical", "Major", "Medium", "Minor"],
   datasets: [
     {
+      label: "Current Issue Count",
+      data: [0, 1, 11, 13, 8],
+      borderColor: "rgba(0, 191, 255, 1)",
+      backgroundColor: "rgba(0, 191, 255, 0.2)",
+      tension: false,
+      fill: true,
+    },
+    {
       label: "Previous Issue Count",
       data: [2, 3, 5, 18, 2],
 
@@ -73,14 +81,6 @@ const data = {
       backgroundColor: "rgba(255, 165, 0, 0.2)",
       tension: 0,
       fill: false,
-    },
-    {
-      label: "Current Issue Count",
-      data: [0, 1, 11, 13, 8],
-      borderColor: "rgba(0, 191, 255, 1)",
-      backgroundColor: "rgba(0, 191, 255, 0.2)",
-      tension: false,
-      fill: true,
     },
   ],
 };

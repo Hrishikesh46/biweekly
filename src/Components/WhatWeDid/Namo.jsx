@@ -185,6 +185,14 @@ const data = {
   labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
   datasets: [
     {
+      label: "Current Issue Count",
+      data: [15, 25, 35, 24, 55],
+      borderColor: "rgba(0, 191, 255, 1)",
+      backgroundColor: "rgba(0, 191, 255, 0.2)",
+      tension: false,
+      fill: true,
+    },
+    {
       label: "Previous Issue Count",
       data: [10, 20, 67, 40, 50],
 
@@ -192,14 +200,6 @@ const data = {
       backgroundColor: "rgba(255, 165, 0, 0.2)",
       tension: 0,
       fill: false,
-    },
-    {
-      label: "Current Issue Count",
-      data: [15, 25, 35, 24, 55],
-      borderColor: "rgba(0, 191, 255, 1)",
-      backgroundColor: "rgba(0, 191, 255, 0.2)",
-      tension: false,
-      fill: true,
     },
   ],
 };
@@ -332,8 +332,8 @@ const Namo = ({ setCategory, parentRef }) => {
       </div>
 
       {/* score */}
-      <p className="text-white text-2xl text-center">
-        Total issues raised : 167
+      <p className="text-white text-3xl text-center">
+        Total Issues Raised : 167
       </p>
 
       {/* Modules heading */}

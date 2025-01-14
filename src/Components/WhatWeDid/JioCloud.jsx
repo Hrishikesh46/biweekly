@@ -238,7 +238,7 @@ const JioCloud = ({ setCategory }) => {
         <Line className="h-[400px]" data={data} options={options} />
 
         <div className="text-white text-3xl text-center mt-6">
-          Total Issues Raised - 201
+          Total Issues Raised : 201
         </div>
       </motion.div>
 

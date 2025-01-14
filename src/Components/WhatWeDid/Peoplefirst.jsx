@@ -63,20 +63,20 @@ const data = {
   labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
   datasets: [
     {
-      label: "Previous Issue Count",
-      data: [4, 53, 110, 88, 11],
-      borderColor: "rgba(255, 165, 0, 0.8)",
-      backgroundColor: "rgba(255, 165, 0, 0.2)",
-      tension: 0,
-      fill: false,
-    },
-    {
       label: "Current Issue Count",
       data: [2, 12, 60, 65, 1],
       borderColor: "rgba(0, 191, 255, 1)",
       backgroundColor: "rgba(0, 191, 255, 0.2)",
       tension: false,
       fill: true,
+    },
+    {
+      label: "Previous Issue Count",
+      data: [4, 53, 110, 88, 11],
+      borderColor: "rgba(255, 165, 0, 0.8)",
+      backgroundColor: "rgba(255, 165, 0, 0.2)",
+      tension: 0,
+      fill: false,
     },
   ],
 };
@@ -241,13 +241,13 @@ const Peoplefirst = ({ setCategory }) => {
             }}
           /> */}
         <Line className="h-[400px]" data={data} options={options} />
-        <div className="text-white text-xl text-center pt-2">
-          Total Issues Raised - 140
+        <div className="text-white text-3xl text-center pt-6 ">
+          Total Issues Raised : 140
         </div>
       </motion.div>
 
       {/* tasks performed */}
-      <div className="text-white text-center mt-20 text-5xl ">
+      <div className="text-white text-center mt-28 text-5xl ">
         Tasks Performed
       </div>
 

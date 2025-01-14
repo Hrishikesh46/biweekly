@@ -82,6 +82,14 @@ const MemberDetail = ({ user, setUser }) => {
     plugins: {
       legend: {
         position: "bottom",
+        labels: {
+          padding: 20, // Increases the space between legend items
+          font: {
+            size: 13,
+            weight: "bold",
+          },
+          color: "white",
+        },
       },
       tooltip: {
         enabled: false,
@@ -263,20 +271,20 @@ const MemberDetail = ({ user, setUser }) => {
                 labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
                 datasets: [
                   {
-                    label: "Previous Issue Count",
-                    data: user.prevSeverity || [0, 0, 0, 0, 0], // Fallback to avoid undefined
-                    borderColor: "rgba(75, 192, 192, 1)",
-                    backgroundColor: "rgba(75, 192, 192, 0.2)",
-                    tension: 0, // Sharp lines
-                    fill: false, // No fill
-                  },
-                  {
                     label: "Current Issue Count",
                     data: user.currSeverity, // Replace with actual data or leave empty if not available
                     borderColor: "rgba(153, 102, 255, 1)",
                     backgroundColor: "rgba(153, 102, 255, 0.2)",
                     tension: 0, // Sharp lines
                     fill: true, // Filled line
+                  },
+                  {
+                    label: "Previous Issue Count",
+                    data: user.prevSeverity || [0, 0, 0, 0, 0], // Fallback to avoid undefined
+                    borderColor: "rgba(75, 192, 192, 1)",
+                    backgroundColor: "rgba(75, 192, 192, 0.2)",
+                    tension: 0, // Sharp lines
+                    fill: false, // No fill
                   },
                 ],
               }}
