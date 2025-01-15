@@ -349,7 +349,7 @@ const Namo = ({ setCategory, parentRef }) => {
             <img src={baps} alt="" className="w-20 h-20 bg-white rounded-xl " />
             <div className="flex flex-col gap-1  ">
               {/* title */}
-              <div className="text-xl">Seva Shraddha Samarpan</div>
+              <div className="text-xl">Seva, Shraddha, Samarpan</div>
 
               {/* description */}
               <div className="text-sm font-normal">
@@ -483,9 +483,9 @@ const Namo = ({ setCategory, parentRef }) => {
               alt=""
               className="w-20 h-20 bg-white rounded-xl object-contain "
             />
-            <div className="flex flex-col gap-2  ">
+            <div className="flex flex-col gap-1  ">
               {/* title */}
-              <div className="">Memory Game</div>
+              <div className="text-2xl">Memory Game</div>
 
               {/* description */}
               <div className="text-sm font-normal">
