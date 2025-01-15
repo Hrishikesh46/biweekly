@@ -8,7 +8,7 @@ const Header = () => {
         JioEvents
       </div>
       <div className="absolute text-[28px] text-white font-normal z-10 pl-20 pt-[630px]">
-        Biweekly 23 Oct - 10 Jan
+        Biweekly 23 Oct - 14 Jan
       </div>
     </div>
   );
