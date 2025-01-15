@@ -2,7 +2,7 @@
 import meeti from "../../assets/TeamMembers/Meeti.webp";
 import hrishikesh from "../../assets/TeamMembers/Nakli.webp";
 import sahil from "../../assets/TeamMembers/Sahil.webp";
-import contri from "../../assets/NewCategoryAsset/contrifinal.webp";
+import contri from "../../assets/NewCategoryAsset/finalcontri.webp";
 
 // bg-gradient-to-r from-red-900 from-25% via-pink-300 via-75% to-slate-700 to-100%
 
@@ -11,8 +11,8 @@ export default function Contributors() {
     <div className=" h-screen mx-auto p-20 flex-col w-[1200px] ">
       <div className="h-40 flex justify-center items-center">
         <div className="">
-          <h1 className="text-white text-center text-6xl">CONTRIBUTORS</h1>
-          <h3 className="mt-2  text-white text-3xl text-center">
+          <h1 className="text-white text-center text-5xl">CONTRIBUTORS</h1>
+          <h3 className="mt-2  text-white text-2xl text-center">
             The Mind for Muscle
           </h3>
         </div>
@@ -50,7 +50,7 @@ export default function Contributors() {
         </div> 
       </div> */}
 
-      <div className="mx-auto pr-12">
+      <div className="px-16 pb-16 mt-2 ">
         <img src={contri} alt="" />
       </div>
 

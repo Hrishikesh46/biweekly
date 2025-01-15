@@ -514,7 +514,62 @@ const Namo = ({ setCategory, parentRef }) => {
         {/* chart */}
         <motion.div className="w-[800px]  rounded-lg mt-8 ">
           <Bar
-            options={optionsBar}
+            options={{
+              responsive: true,
+              plugins: {
+                legend: {
+                  display: false,
+                  labels: {
+                    color: "White", // Change the font color of the legend labels
+                    font: {
+                      size: 16,
+                    },
+                  },
+                },
+                datalabels: {
+                  color: "#fff",
+                  align: "top",
+                  anchor: "end",
+                  font: {
+                    size: 14,
+                  },
+                  formatter: (value) => value,
+                },
+              },
+              scales: {
+                x: {
+                  display: true,
+                  grid: {
+                    display: true,
+
+                    color: "rgba(255, 255, 255, 0.2)", // X-axis grid color
+                  },
+                  ticks: {
+                    color: "White", // Change the font color of the x-axis labels
+                    font: {
+                      size: 14,
+                    },
+                  },
+                },
+                y: {
+                  min: 0, // Set minimum value
+                  max: 10, // Set maximum value
+
+                  grid: {
+                    display: true,
+
+                    color: "rgba(255, 255, 255, 0.2)", // X-axis grid color
+                  },
+                  ticks: {
+                    color: "White", // Change the font color of the y-axis labels
+                    font: {
+                      size: 14,
+                      stepSize: 2,
+                    },
+                  },
+                },
+              },
+            }}
             data={{
               labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
 
