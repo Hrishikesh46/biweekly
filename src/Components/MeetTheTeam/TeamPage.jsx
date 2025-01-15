@@ -135,7 +135,7 @@ const options = {
       },
     },
     tooltip: {
-      enabled: false,
+      enabled: true,
     },
     datalabels: {
       display: false, // Explicitly disable data labels if the plugin is installed
@@ -301,12 +301,14 @@ const TeamPage = ({ category, setCategory }) => {
                     key={member.name}
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.4 }}
-                    className="h-[260px]  w-[270px] bg-gray-500 bg-opacity-50 rounded-lg"
+                    className={`h-[260px]   w-[270px] bg-gray-500 bg-opacity-50 rounded-lg`}
                     onClick={() => handleUserDetail(member)}
                   >
                     <div
-                      className="flex flex-col  "
-                      style={{ willChange: "opacity, transform" }}
+                      className={`flex flex-col rounded-lg `}
+                      style={{
+                        willChange: "opacity, transform",
+                      }}
                     >
                       {/* profile image */}
                       <img
