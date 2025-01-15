@@ -27,6 +27,9 @@ ChartJS.register(
 const optionsBar = {
   responsive: true,
   plugins: {
+    tooltip: {
+      enabled: true,
+    },
     legend: {
       display: false,
       labels: {
@@ -92,7 +95,7 @@ const MemberDetail = ({ user, setUser }) => {
         },
       },
       tooltip: {
-        enabled: false,
+        enabled: true,
       },
       datalabels: {
         display: false, // Explicitly disable data labels if the plugin is installed

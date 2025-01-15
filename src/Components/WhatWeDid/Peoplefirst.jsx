@@ -97,7 +97,7 @@ const options = {
       },
     },
     tooltip: {
-      enabled: false,
+      enabled: true,
     },
     datalabels: {
       display: false, // Explicitly disable data labels if the plugin is installed

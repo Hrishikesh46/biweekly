@@ -288,7 +288,7 @@ const JioCloud = ({ setCategory }) => {
 
           {/* description */}
           <div className="text-[16px] leading-6">
-            Feature testing on Jio Cloud ensures AI Magic, AI Edit, and other
+            Feature testing on JioCloud ensures AI Magic, AI Edit, and other
             features work smoothly across devices.
           </div>
         </div>
